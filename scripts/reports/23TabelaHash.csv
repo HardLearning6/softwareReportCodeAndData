@@ -1,0 +1,4 @@
+PRJ;FolderName;Cobertos;Gerados;Cobertura;Mortos;Total;Escore
+23TabelaHash;ds.EvoSuiteTest.TabelaHash_ESTest_scaffolding;0;52;0%;0;166;0%
+23TabelaHash;ds.EvoSuiteTest.Evo;52;52;100%;100;166;60%
+23TabelaHash;ds.RandoopTest.Randoop;51;52;98%;146;166;88%

@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: ds.RandoopTest.Randoop0
+-------------------------------------------------------------------------------
+Tests run: 175, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.39 sec <<< FAILURE! - in ds.RandoopTest.Randoop0
+test064(ds.RandoopTest.Randoop0)  Time elapsed: 0.012 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[[1, ]]> but was:<[[, 1]]>
+	at ds.RandoopTest.Randoop0.test064(Randoop0.java:1189)
+

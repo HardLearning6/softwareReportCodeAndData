@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ds.RandoopTest.Randoop0" time="0.47" tests="60" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.432-bga"/>
+    <property name="testName" value="ds.RandoopTest.Randoop0"/>
+    <property name="java.vm.vendor" value="Private Build"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/chenyuwen/test/initial-investigation-chatgpt-unit-tests/projetos/30Lista"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/chenyuwen/test/initial-investigation-chatgpt-unit-tests/projetos/30Lista"/>
+    <property name="java.runtime.version" value="1.8.0_432-8u432-ga~us1-0ubuntu2~20.04-ga"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/home/chenyuwen/apache-maven-3.9.9/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="maven.conf" value="/home/chenyuwen/apache-maven-3.9.9/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="5.15.0-127-generic"/>
+    <property name="library.jansi.path" value="/home/chenyuwen/apache-maven-3.9.9/lib/jansi-native"/>
+    <property name="user.home" value="/home/chenyuwen"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="chenyuwen"/>
+    <property name="java.class.path" value="/home/chenyuwen/apache-maven-3.9.9/boot/plexus-classworlds-2.8.0.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -DclassName=ds.AgmPrim -DtestName=ds.RandoopTest.Randoop0 clean install org.pitest:pitest-maven:mutationCoverage"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="zh"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_432"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
+    <property name="java.vendor" value="Private Build"/>
+    <property name="java.specification.maintenance.version" value="6"/>
+    <property name="maven.home" value="/home/chenyuwen/apache-maven-3.9.9"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="className" value="ds.AgmPrim"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="test01" classname="ds.RandoopTest.Randoop0" time="0.02"/>
+  <testcase name="test02" classname="ds.RandoopTest.Randoop0" time="0.004"/>
+  <testcase name="test03" classname="ds.RandoopTest.Randoop0" time="0.001"/>
+  <testcase name="test04" classname="ds.RandoopTest.Randoop0" time="0.001"/>
+  <testcase name="test05" classname="ds.RandoopTest.Randoop0" time="0.001"/>
+  <testcase name="test06" classname="ds.RandoopTest.Randoop0" time="0.003"/>
+  <testcase name="test07" classname="ds.RandoopTest.Randoop0" time="0.001"/>
+  <testcase name="test08" classname="ds.RandoopTest.Randoop0" time="0.001"/>
+  <testcase name="test09" classname="ds.RandoopTest.Randoop0" time="0.002"/>
+  <testcase name="test10" classname="ds.RandoopTest.Randoop0" time="0.001"/>
+  <testcase name="test11" classname="ds.RandoopTest.Randoop0" time="0.001"/>
+  <testcase name="test12" classname="ds.RandoopTest.Randoop0" time="0.001"/>
+  <testcase name="test13" classname="ds.RandoopTest.Randoop0" time="0.001"/>
+  <testcase name="test14" classname="ds.RandoopTest.Randoop0" time="0.001"/>
+  <testcase name="test15" classname="ds.RandoopTest.Randoop0" time="0.001"/>
+  <testcase name="test16" classname="ds.RandoopTest.Randoop0" time="0.005"/>
+  <testcase name="test17" classname="ds.RandoopTest.Randoop0" time="0.001"/>
+  <testcase name="test18" classname="ds.RandoopTest.Randoop0" time="0.001"/>
+  <testcase name="test19" classname="ds.RandoopTest.Randoop0" time="0.001"/>
+  <testcase name="test20" classname="ds.RandoopTest.Randoop0" time="0.001"/>
+  <testcase name="test21" classname="ds.RandoopTest.Randoop0" time="0.001"/>
+  <testcase name="test22" classname="ds.RandoopTest.Randoop0" time="0.001"/>
+  <testcase name="test23" classname="ds.RandoopTest.Randoop0" time="0.001"/>
+  <testcase name="test24" classname="ds.RandoopTest.Randoop0" time="0.001"/>
+  <testcase name="test25" classname="ds.RandoopTest.Randoop0" time="0.001"/>
+  <testcase name="test26" classname="ds.RandoopTest.Randoop0" time="0"/>
+  <testcase name="test27" classname="ds.RandoopTest.Randoop0" time="0.001"/>
+  <testcase name="test28" classname="ds.RandoopTest.Randoop0" time="0.001"/>
+  <testcase name="test29" classname="ds.RandoopTest.Randoop0" time="0.001"/>
+  <testcase name="test30" classname="ds.RandoopTest.Randoop0" time="0.001"/>
+  <testcase name="test31" classname="ds.RandoopTest.Randoop0" time="0.001"/>
+  <testcase name="test32" classname="ds.RandoopTest.Randoop0" time="0.001"/>
+  <testcase name="test33" classname="ds.RandoopTest.Randoop0" time="0.001"/>
+  <testcase name="test34" classname="ds.RandoopTest.Randoop0" time="0.001"/>
+  <testcase name="test35" classname="ds.RandoopTest.Randoop0" time="0.001"/>
+  <testcase name="test36" classname="ds.RandoopTest.Randoop0" time="0.001"/>
+  <testcase name="test37" classname="ds.RandoopTest.Randoop0" time="0.001"/>
+  <testcase name="test38" classname="ds.RandoopTest.Randoop0" time="0.001"/>
+  <testcase name="test39" classname="ds.RandoopTest.Randoop0" time="0.001"/>
+  <testcase name="test40" classname="ds.RandoopTest.Randoop0" time="0.001"/>
+  <testcase name="test41" classname="ds.RandoopTest.Randoop0" time="0.004"/>
+  <testcase name="test42" classname="ds.RandoopTest.Randoop0" time="0"/>
+  <testcase name="test43" classname="ds.RandoopTest.Randoop0" time="0"/>
+  <testcase name="test44" classname="ds.RandoopTest.Randoop0" time="0.001"/>
+  <testcase name="test45" classname="ds.RandoopTest.Randoop0" time="0.001"/>
+  <testcase name="test46" classname="ds.RandoopTest.Randoop0" time="0"/>
+  <testcase name="test47" classname="ds.RandoopTest.Randoop0" time="0.001"/>
+  <testcase name="test48" classname="ds.RandoopTest.Randoop0" time="0.017"/>
+  <testcase name="test49" classname="ds.RandoopTest.Randoop0" time="0"/>
+  <testcase name="test50" classname="ds.RandoopTest.Randoop0" time="0"/>
+  <testcase name="test51" classname="ds.RandoopTest.Randoop0" time="0"/>
+  <testcase name="test52" classname="ds.RandoopTest.Randoop0" time="0"/>
+  <testcase name="test53" classname="ds.RandoopTest.Randoop0" time="0"/>
+  <testcase name="test54" classname="ds.RandoopTest.Randoop0" time="0"/>
+  <testcase name="test55" classname="ds.RandoopTest.Randoop0" time="0"/>
+  <testcase name="test56" classname="ds.RandoopTest.Randoop0" time="0"/>
+  <testcase name="test57" classname="ds.RandoopTest.Randoop0" time="0"/>
+  <testcase name="test58" classname="ds.RandoopTest.Randoop0" time="0"/>
+  <testcase name="test59" classname="ds.RandoopTest.Randoop0" time="0"/>
+  <testcase name="test60" classname="ds.RandoopTest.Randoop0" time="0"/>
+</testsuite>

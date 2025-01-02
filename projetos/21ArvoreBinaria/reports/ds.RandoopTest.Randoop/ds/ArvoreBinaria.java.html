@@ -1,0 +1,2004 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>ArvoreBinaria.java</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_1'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package ds;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_2'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_3'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>public class ArvoreBinaria {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_4'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>  private static class No { </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_5'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    Item reg; </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_6'/>
+6
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_6'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    No esq, dir; </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_7'/>
+7
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_7'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>  }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_8'/>
+8
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_8'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>  private No raiz;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_9'/>
+9
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_9'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>  private void central (No p) {</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_10'/>
+10
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_10'>3</a>
+<span>
+1. central : negated conditional &rarr; NO_COVERAGE<br/>
+2. central : removed conditional - replaced equality check with false &rarr; NO_COVERAGE<br/>
+3. central : removed conditional - replaced equality check with true &rarr; NO_COVERAGE<br/>
+
+</span>
+</td>
+<td class='uncovered'><pre><span  class='survived'>    if (p != null) {</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_11'/>
+11
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_11'>1</a>
+<span>
+1. central : removed call to ds/ArvoreBinaria::central &rarr; NO_COVERAGE<br/>
+
+</span>
+</td>
+<td class='uncovered'><pre><span  class='survived'>      central (p.esq);</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_12'/>
+12
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_12'>2</a>
+<span>
+1. central : removed call to java/lang/Object::toString &rarr; NO_COVERAGE<br/>
+2. central : removed call to java/io/PrintStream::println &rarr; NO_COVERAGE<br/>
+
+</span>
+</td>
+<td class='uncovered'><pre><span  class='survived'>      System.out.println (p.reg.toString());</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_13'/>
+13
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_13'>1</a>
+<span>
+1. central : removed call to ds/ArvoreBinaria::central &rarr; NO_COVERAGE<br/>
+
+</span>
+</td>
+<td class='uncovered'><pre><span  class='survived'>      central (p.dir);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_14'/>
+14
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_14'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_15'/>
+15
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_15'></a>
+<span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>  }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_16'/>
+16
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_16'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>  private Item pesquisa (Item reg, No p) {//</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_17'/>
+17
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_17'>4</a>
+<span>
+1. pesquisa : negated conditional &rarr; KILLED<br/>
+2. pesquisa : removed conditional - replaced equality check with false &rarr; KILLED<br/>
+3. pesquisa : removed conditional - replaced equality check with true &rarr; KILLED<br/>
+4. pesquisa : mutated return of Object value for ds/ArvoreBinaria::pesquisa to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>    if (p == null) return null; // @{\it Registro n\~ao econtrado}@</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_18'/>
+18
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_18'>9</a>
+<span>
+1. pesquisa : replaced call to ds/ArvoreBinaria::pesquisa with argument &rarr; SURVIVED<br/>
+2. pesquisa : changed conditional boundary &rarr; SURVIVED<br/>
+3. pesquisa : negated conditional &rarr; SURVIVED<br/>
+4. pesquisa : removed call to ds/Item::compara &rarr; SURVIVED<br/>
+5. pesquisa : removed call to ds/ArvoreBinaria::pesquisa &rarr; SURVIVED<br/>
+6. pesquisa : replaced return value with null for ds/ArvoreBinaria::pesquisa &rarr; SURVIVED<br/>
+7. pesquisa : removed conditional - replaced comparison check with false &rarr; SURVIVED<br/>
+8. pesquisa : removed conditional - replaced comparison check with true &rarr; SURVIVED<br/>
+9. pesquisa : mutated return of Object value for ds/ArvoreBinaria::pesquisa to ( if (x != null) null else throw new RuntimeException ) &rarr; SURVIVED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>    else if (reg.compara (p.reg) &#60; 0) return pesquisa (reg, p.esq);</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_19'/>
+19
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_19'>9</a>
+<span>
+1. pesquisa : replaced call to ds/ArvoreBinaria::pesquisa with argument &rarr; NO_COVERAGE<br/>
+2. pesquisa : changed conditional boundary &rarr; NO_COVERAGE<br/>
+3. pesquisa : negated conditional &rarr; NO_COVERAGE<br/>
+4. pesquisa : removed call to ds/Item::compara &rarr; NO_COVERAGE<br/>
+5. pesquisa : removed call to ds/ArvoreBinaria::pesquisa &rarr; NO_COVERAGE<br/>
+6. pesquisa : replaced return value with null for ds/ArvoreBinaria::pesquisa &rarr; NO_COVERAGE<br/>
+7. pesquisa : removed conditional - replaced comparison check with false &rarr; NO_COVERAGE<br/>
+8. pesquisa : removed conditional - replaced comparison check with true &rarr; NO_COVERAGE<br/>
+9. pesquisa : mutated return of Object value for ds/ArvoreBinaria::pesquisa to ( if (x != null) null else throw new RuntimeException ) &rarr; NO_COVERAGE<br/>
+
+</span>
+</td>
+<td class='uncovered'><pre><span  class='survived'>    else if (reg.compara (p.reg) &#62; 0) return pesquisa (reg, p.dir);</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_20'/>
+20
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_20'>2</a>
+<span>
+1. pesquisa : replaced return value with null for ds/ArvoreBinaria::pesquisa &rarr; NO_COVERAGE<br/>
+2. pesquisa : mutated return of Object value for ds/ArvoreBinaria::pesquisa to ( if (x != null) null else throw new RuntimeException ) &rarr; NO_COVERAGE<br/>
+
+</span>
+</td>
+<td class='uncovered'><pre><span  class='survived'>    else return p.reg;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_21'/>
+21
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_21'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>  }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_22'/>
+22
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_22'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>  </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_23'/>
+23
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_23'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>  private No insere (Item reg, No p) {//</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_24'/>
+24
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_24'>3</a>
+<span>
+1. insere : negated conditional &rarr; KILLED<br/>
+2. insere : removed conditional - replaced equality check with false &rarr; KILLED<br/>
+3. insere : removed conditional - replaced equality check with true &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>    if (p == null) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_25'/>
+25
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_25'>2</a>
+<span>
+1. insere : Removed assignment to member variable reg &rarr; SURVIVED<br/>
+2. insere : removed call to ds/ArvoreBinaria$No::&#60;init&#62; &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>      p = new No (); p.reg = reg; </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_26'/>
+26
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_26'>2</a>
+<span>
+1. insere : Removed assignment to member variable esq &rarr; SURVIVED<br/>
+2. insere : Removed assignment to member variable dir &rarr; SURVIVED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>      p.esq = null; p.dir = null;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_27'/>
+27
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_27'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_28'/>
+28
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_28'>8</a>
+<span>
+1. insere : replaced call to ds/ArvoreBinaria::insere with argument &rarr; SURVIVED<br/>
+2. insere : changed conditional boundary &rarr; SURVIVED<br/>
+3. insere : negated conditional &rarr; SURVIVED<br/>
+4. insere : removed call to ds/Item::compara &rarr; SURVIVED<br/>
+5. insere : removed call to ds/ArvoreBinaria::insere &rarr; SURVIVED<br/>
+6. insere : removed conditional - replaced comparison check with false &rarr; SURVIVED<br/>
+7. insere : removed conditional - replaced comparison check with true &rarr; SURVIVED<br/>
+8. insere : Removed assignment to member variable esq &rarr; SURVIVED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>    else if (reg.compara (p.reg) &#60; 0) p.esq = insere (reg, p.esq);</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_29'/>
+29
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_29'>8</a>
+<span>
+1. insere : replaced call to ds/ArvoreBinaria::insere with argument &rarr; NO_COVERAGE<br/>
+2. insere : changed conditional boundary &rarr; NO_COVERAGE<br/>
+3. insere : negated conditional &rarr; NO_COVERAGE<br/>
+4. insere : removed call to ds/Item::compara &rarr; NO_COVERAGE<br/>
+5. insere : removed call to ds/ArvoreBinaria::insere &rarr; NO_COVERAGE<br/>
+6. insere : removed conditional - replaced comparison check with false &rarr; NO_COVERAGE<br/>
+7. insere : removed conditional - replaced comparison check with true &rarr; NO_COVERAGE<br/>
+8. insere : Removed assignment to member variable dir &rarr; NO_COVERAGE<br/>
+
+</span>
+</td>
+<td class='uncovered'><pre><span  class='survived'>    else if (reg.compara (p.reg) &#62; 0) p.dir = insere (reg, p.dir);</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_30'/>
+30
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_30'>1</a>
+<span>
+1. insere : removed call to java/io/PrintStream::println &rarr; NO_COVERAGE<br/>
+
+</span>
+</td>
+<td class='uncovered'><pre><span  class='survived'>    else System.out.println (&#34;Erro: Registro ja existente&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_31'/>
+31
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_31'>2</a>
+<span>
+1. insere : replaced return value with null for ds/ArvoreBinaria::insere &rarr; KILLED<br/>
+2. insere : mutated return of Object value for ds/ArvoreBinaria::insere to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>    return p; </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_32'/>
+32
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_32'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>  }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_33'/>
+33
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_33'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>  private No antecessor (No q, No r) {</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_34'/>
+34
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_34'>6</a>
+<span>
+1. antecessor : replaced call to ds/ArvoreBinaria::antecessor with argument &rarr; NO_COVERAGE<br/>
+2. antecessor : negated conditional &rarr; NO_COVERAGE<br/>
+3. antecessor : removed call to ds/ArvoreBinaria::antecessor &rarr; NO_COVERAGE<br/>
+4. antecessor : removed conditional - replaced equality check with false &rarr; NO_COVERAGE<br/>
+5. antecessor : removed conditional - replaced equality check with true &rarr; NO_COVERAGE<br/>
+6. antecessor : Removed assignment to member variable dir &rarr; NO_COVERAGE<br/>
+
+</span>
+</td>
+<td class='uncovered'><pre><span  class='survived'>    if (r.dir != null) r.dir = antecessor (q, r.dir);</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_35'/>
+35
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_35'>1</a>
+<span>
+1. antecessor : Removed assignment to member variable reg &rarr; NO_COVERAGE<br/>
+
+</span>
+</td>
+<td class='uncovered'><pre><span  class='survived'>    else { q.reg = r.reg; r = r.esq; }</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_36'/>
+36
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_36'>2</a>
+<span>
+1. antecessor : replaced return value with null for ds/ArvoreBinaria::antecessor &rarr; NO_COVERAGE<br/>
+2. antecessor : mutated return of Object value for ds/ArvoreBinaria::antecessor to ( if (x != null) null else throw new RuntimeException ) &rarr; NO_COVERAGE<br/>
+
+</span>
+</td>
+<td class='uncovered'><pre><span  class='survived'>    return r;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_37'/>
+37
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_37'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>  }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_38'/>
+38
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_38'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>  private No retira (Item reg, No p) {//</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_39'/>
+39
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_39'>4</a>
+<span>
+1. retira : removed call to java/io/PrintStream::println &rarr; SURVIVED<br/>
+2. retira : negated conditional &rarr; KILLED<br/>
+3. retira : removed conditional - replaced equality check with false &rarr; KILLED<br/>
+4. retira : removed conditional - replaced equality check with true &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>    if (p == null) System.out.println (&#34;Erro: Registro nao encontrado&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_40'/>
+40
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_40'>8</a>
+<span>
+1. retira : replaced call to ds/ArvoreBinaria::retira with argument &rarr; SURVIVED<br/>
+2. retira : changed conditional boundary &rarr; SURVIVED<br/>
+3. retira : negated conditional &rarr; SURVIVED<br/>
+4. retira : removed call to ds/Item::compara &rarr; SURVIVED<br/>
+5. retira : removed call to ds/ArvoreBinaria::retira &rarr; SURVIVED<br/>
+6. retira : removed conditional - replaced comparison check with false &rarr; SURVIVED<br/>
+7. retira : removed conditional - replaced comparison check with true &rarr; SURVIVED<br/>
+8. retira : Removed assignment to member variable esq &rarr; SURVIVED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>    else if (reg.compara (p.reg) &#60; 0) p.esq = retira (reg, p.esq);</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_41'/>
+41
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_41'>8</a>
+<span>
+1. retira : replaced call to ds/ArvoreBinaria::retira with argument &rarr; NO_COVERAGE<br/>
+2. retira : changed conditional boundary &rarr; NO_COVERAGE<br/>
+3. retira : negated conditional &rarr; NO_COVERAGE<br/>
+4. retira : removed call to ds/Item::compara &rarr; NO_COVERAGE<br/>
+5. retira : removed call to ds/ArvoreBinaria::retira &rarr; NO_COVERAGE<br/>
+6. retira : removed conditional - replaced comparison check with false &rarr; NO_COVERAGE<br/>
+7. retira : removed conditional - replaced comparison check with true &rarr; NO_COVERAGE<br/>
+8. retira : Removed assignment to member variable dir &rarr; NO_COVERAGE<br/>
+
+</span>
+</td>
+<td class='uncovered'><pre><span  class='survived'>    else if (reg.compara (p.reg) &#62; 0) p.dir = retira (reg, p.dir);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_42'/>
+42
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_42'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    else {</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_43'/>
+43
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_43'>3</a>
+<span>
+1. retira : negated conditional &rarr; NO_COVERAGE<br/>
+2. retira : removed conditional - replaced equality check with false &rarr; NO_COVERAGE<br/>
+3. retira : removed conditional - replaced equality check with true &rarr; NO_COVERAGE<br/>
+
+</span>
+</td>
+<td class='uncovered'><pre><span  class='survived'>      if (p.dir == null) p = p.esq;</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_44'/>
+44
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_44'>3</a>
+<span>
+1. retira : negated conditional &rarr; NO_COVERAGE<br/>
+2. retira : removed conditional - replaced equality check with false &rarr; NO_COVERAGE<br/>
+3. retira : removed conditional - replaced equality check with true &rarr; NO_COVERAGE<br/>
+
+</span>
+</td>
+<td class='uncovered'><pre><span  class='survived'>      else if (p.esq == null) p = p.dir;</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_45'/>
+45
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_45'>3</a>
+<span>
+1. retira : replaced call to ds/ArvoreBinaria::antecessor with argument &rarr; NO_COVERAGE<br/>
+2. retira : removed call to ds/ArvoreBinaria::antecessor &rarr; NO_COVERAGE<br/>
+3. retira : Removed assignment to member variable esq &rarr; NO_COVERAGE<br/>
+
+</span>
+</td>
+<td class='uncovered'><pre><span  class='survived'>      else p.esq = antecessor (p, p.esq); </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_46'/>
+46
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_46'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_47'/>
+47
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_47'>2</a>
+<span>
+1. retira : replaced return value with null for ds/ArvoreBinaria::retira &rarr; SURVIVED<br/>
+2. retira : mutated return of Object value for ds/ArvoreBinaria::retira to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>    return p; </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_48'/>
+48
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_48'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>  }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_49'/>
+49
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_49'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_50'/>
+50
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_50'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>  public ArvoreBinaria () {//</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_51'/>
+51
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_51'>1</a>
+<span>
+1. <init> : Removed assignment to member variable raiz &rarr; SURVIVED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>    this.raiz = null;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_52'/>
+52
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_52'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>  }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_53'/>
+53
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_53'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>  </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_54'/>
+54
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_54'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>  public Item pesquisa (Item reg) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_55'/>
+55
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_55'>4</a>
+<span>
+1. pesquisa : replaced return value with null for ds/ArvoreBinaria::pesquisa &rarr; SURVIVED<br/>
+2. pesquisa : replaced call to ds/ArvoreBinaria::pesquisa with argument &rarr; KILLED<br/>
+3. pesquisa : removed call to ds/ArvoreBinaria::pesquisa &rarr; KILLED<br/>
+4. pesquisa : mutated return of Object value for ds/ArvoreBinaria::pesquisa to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>    return this.pesquisa (reg, this.raiz);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_56'/>
+56
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_56'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>  }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_57'/>
+57
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_57'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_58'/>
+58
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_58'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>  public void insere (Item reg) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_59'/>
+59
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_59'>3</a>
+<span>
+1. insere : replaced call to ds/ArvoreBinaria::insere with argument &rarr; KILLED<br/>
+2. insere : removed call to ds/ArvoreBinaria::insere &rarr; KILLED<br/>
+3. insere : Removed assignment to member variable raiz &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>    this.raiz = this.insere (reg, this.raiz);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_60'/>
+60
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_60'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>  }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_61'/>
+61
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_61'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_62'/>
+62
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_62'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>  public void retira (Item reg) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_63'/>
+63
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_63'>3</a>
+<span>
+1. retira : Removed assignment to member variable raiz &rarr; SURVIVED<br/>
+2. retira : replaced call to ds/ArvoreBinaria::retira with argument &rarr; KILLED<br/>
+3. retira : removed call to ds/ArvoreBinaria::retira &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>    this.raiz = this.retira (reg, this.raiz);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_64'/>
+64
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_64'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>  }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_65'/>
+65
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_65'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>  </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_66'/>
+66
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_66'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>  // @{\it M\&#39;etodo para testar o funcionamento da classe}@</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_67'/>
+67
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_67'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>  private void testa (No p) { </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_68'/>
+68
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_68'>3</a>
+<span>
+1. testa : removed conditional - replaced equality check with true &rarr; SURVIVED<br/>
+2. testa : negated conditional &rarr; KILLED<br/>
+3. testa : removed conditional - replaced equality check with false &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>    if (p == null) return;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_69'/>
+69
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_69'>3</a>
+<span>
+1. testa : removed conditional - replaced equality check with false &rarr; SURVIVED<br/>
+2. testa : negated conditional &rarr; KILLED<br/>
+3. testa : removed conditional - replaced equality check with true &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>    if (p.esq != null) { </span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_70'/>
+70
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_70'>5</a>
+<span>
+1. testa : changed conditional boundary &rarr; NO_COVERAGE<br/>
+2. testa : negated conditional &rarr; NO_COVERAGE<br/>
+3. testa : removed call to ds/Item::compara &rarr; NO_COVERAGE<br/>
+4. testa : removed conditional - replaced comparison check with false &rarr; NO_COVERAGE<br/>
+5. testa : removed conditional - replaced comparison check with true &rarr; NO_COVERAGE<br/>
+
+</span>
+</td>
+<td class='uncovered'><pre><span  class='survived'>      if (p.reg.compara (p.esq.reg) &#60; 0) { </span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_71'/>
+71
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_71'>13</a>
+<span>
+1. testa : removed call to java/lang/StringBuilder::&#60;init&#62; &rarr; NO_COVERAGE<br/>
+2. testa : removed call to java/lang/StringBuilder::append &rarr; NO_COVERAGE<br/>
+3. testa : removed call to java/lang/Object::toString &rarr; NO_COVERAGE<br/>
+4. testa : removed call to java/lang/StringBuilder::append &rarr; NO_COVERAGE<br/>
+5. testa : removed call to java/lang/StringBuilder::append &rarr; NO_COVERAGE<br/>
+6. testa : removed call to java/lang/Object::toString &rarr; NO_COVERAGE<br/>
+7. testa : removed call to java/lang/StringBuilder::append &rarr; NO_COVERAGE<br/>
+8. testa : removed call to java/lang/StringBuilder::toString &rarr; NO_COVERAGE<br/>
+9. testa : removed call to java/io/PrintStream::println &rarr; NO_COVERAGE<br/>
+10. testa : replaced call to java/lang/StringBuilder::append with receiver &rarr; NO_COVERAGE<br/>
+11. testa : replaced call to java/lang/StringBuilder::append with receiver &rarr; NO_COVERAGE<br/>
+12. testa : replaced call to java/lang/StringBuilder::append with receiver &rarr; NO_COVERAGE<br/>
+13. testa : replaced call to java/lang/StringBuilder::append with receiver &rarr; NO_COVERAGE<br/>
+
+</span>
+</td>
+<td class='uncovered'><pre><span  class='survived'>        System.out.println (&#34;Erro: Pai &#34; + p.reg.toString() + &#34; menor que filho a esquerda &#34; + p.esq.reg.toString());</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_72'/>
+72
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_72'>2</a>
+<span>
+1. testa : Substituted 1 with 0 &rarr; NO_COVERAGE<br/>
+2. testa : removed call to java/lang/System::exit &rarr; NO_COVERAGE<br/>
+
+</span>
+</td>
+<td class='uncovered'><pre><span  class='survived'>        System.exit(1);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_73'/>
+73
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_73'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>      }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_74'/>
+74
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_74'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_75'/>
+75
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_75'>3</a>
+<span>
+1. testa : removed conditional - replaced equality check with false &rarr; SURVIVED<br/>
+2. testa : negated conditional &rarr; KILLED<br/>
+3. testa : removed conditional - replaced equality check with true &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>    if (p.dir != null) { </span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_76'/>
+76
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_76'>5</a>
+<span>
+1. testa : changed conditional boundary &rarr; NO_COVERAGE<br/>
+2. testa : negated conditional &rarr; NO_COVERAGE<br/>
+3. testa : removed call to ds/Item::compara &rarr; NO_COVERAGE<br/>
+4. testa : removed conditional - replaced comparison check with false &rarr; NO_COVERAGE<br/>
+5. testa : removed conditional - replaced comparison check with true &rarr; NO_COVERAGE<br/>
+
+</span>
+</td>
+<td class='uncovered'><pre><span  class='survived'>      if (p.reg.compara (p.dir.reg) &#62; 0 ) { </span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_77'/>
+77
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_77'>13</a>
+<span>
+1. testa : removed call to java/lang/StringBuilder::&#60;init&#62; &rarr; NO_COVERAGE<br/>
+2. testa : removed call to java/lang/StringBuilder::append &rarr; NO_COVERAGE<br/>
+3. testa : removed call to java/lang/Object::toString &rarr; NO_COVERAGE<br/>
+4. testa : removed call to java/lang/StringBuilder::append &rarr; NO_COVERAGE<br/>
+5. testa : removed call to java/lang/StringBuilder::append &rarr; NO_COVERAGE<br/>
+6. testa : removed call to java/lang/Object::toString &rarr; NO_COVERAGE<br/>
+7. testa : removed call to java/lang/StringBuilder::append &rarr; NO_COVERAGE<br/>
+8. testa : removed call to java/lang/StringBuilder::toString &rarr; NO_COVERAGE<br/>
+9. testa : removed call to java/io/PrintStream::println &rarr; NO_COVERAGE<br/>
+10. testa : replaced call to java/lang/StringBuilder::append with receiver &rarr; NO_COVERAGE<br/>
+11. testa : replaced call to java/lang/StringBuilder::append with receiver &rarr; NO_COVERAGE<br/>
+12. testa : replaced call to java/lang/StringBuilder::append with receiver &rarr; NO_COVERAGE<br/>
+13. testa : replaced call to java/lang/StringBuilder::append with receiver &rarr; NO_COVERAGE<br/>
+
+</span>
+</td>
+<td class='uncovered'><pre><span  class='survived'>        System.out.println (&#34;Erro: Pai &#34; + p.reg.toString() + &#34; maior que filho a direita &#34; + p.dir.reg.toString());</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_78'/>
+78
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_78'>2</a>
+<span>
+1. testa : Substituted 1 with 0 &rarr; NO_COVERAGE<br/>
+2. testa : removed call to java/lang/System::exit &rarr; NO_COVERAGE<br/>
+
+</span>
+</td>
+<td class='uncovered'><pre><span  class='survived'>        System.exit(1);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_79'/>
+79
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_79'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>      }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_80'/>
+80
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_80'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_81'/>
+81
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_81'>1</a>
+<span>
+1. testa : removed call to ds/ArvoreBinaria::testa &rarr; SURVIVED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>    testa(p.esq);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_82'/>
+82
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_82'>1</a>
+<span>
+1. testa : removed call to ds/ArvoreBinaria::testa &rarr; SURVIVED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>    testa(p.dir);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_83'/>
+83
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_83'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>  }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_84'/>
+84
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_84'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>  public void testa () { </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_85'/>
+85
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_85'>1</a>
+<span>
+1. testa : removed call to ds/ArvoreBinaria::testa &rarr; SURVIVED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>    this.testa (this.raiz);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_86'/>
+86
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_86'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>  }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_87'/>
+87
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_87'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@19dfeb17_88'/>
+88
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_88'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@19dfeb17_10'>10</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_10'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>central<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>central<br/><b>Killed by : </b>none</span></span> removed conditional - replaced equality check with false &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>central<br/><b>Killed by : </b>none</span></span> removed conditional - replaced equality check with true &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@19dfeb17_11'>11</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_11'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>central<br/><b>Killed by : </b>none</span></span> removed call to ds/ArvoreBinaria::central &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@19dfeb17_12'>12</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_12'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>central<br/><b>Killed by : </b>none</span></span> removed call to java/lang/Object::toString &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>central<br/><b>Killed by : </b>none</span></span> removed call to java/io/PrintStream::println &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@19dfeb17_13'>13</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_13'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>central<br/><b>Killed by : </b>none</span></span> removed call to ds/ArvoreBinaria::central &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@19dfeb17_17'>17</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_17'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>pesquisa<br/><b>Killed by : </b>ds.RandoopTest.Randoop0.test054(ds.RandoopTest.Randoop0)</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>pesquisa<br/><b>Killed by : </b>ds.RandoopTest.Randoop0.test054(ds.RandoopTest.Randoop0)</span></span> removed conditional - replaced equality check with false &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>pesquisa<br/><b>Killed by : </b>ds.RandoopTest.Randoop0.test147(ds.RandoopTest.Randoop0)</span></span> removed conditional - replaced equality check with true &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>pesquisa<br/><b>Killed by : </b>ds.RandoopTest.Randoop0.test054(ds.RandoopTest.Randoop0)</span></span> mutated return of Object value for ds/ArvoreBinaria::pesquisa to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@19dfeb17_18'>18</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_18'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>pesquisa<br/><b>Killed by : </b>none</span></span> replaced call to ds/ArvoreBinaria::pesquisa with argument &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>pesquisa<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>pesquisa<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>pesquisa<br/><b>Killed by : </b>none</span></span> removed call to ds/Item::compara &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>pesquisa<br/><b>Killed by : </b>none</span></span> removed call to ds/ArvoreBinaria::pesquisa &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>pesquisa<br/><b>Killed by : </b>none</span></span> replaced return value with null for ds/ArvoreBinaria::pesquisa &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>pesquisa<br/><b>Killed by : </b>none</span></span> removed conditional - replaced comparison check with false &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>pesquisa<br/><b>Killed by : </b>none</span></span> removed conditional - replaced comparison check with true &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>9.<span><b>9</b><br/><b>Location : </b>pesquisa<br/><b>Killed by : </b>none</span></span> mutated return of Object value for ds/ArvoreBinaria::pesquisa to ( if (x != null) null else throw new RuntimeException ) &rarr; SURVIVED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@19dfeb17_19'>19</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_19'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>pesquisa<br/><b>Killed by : </b>none</span></span> replaced call to ds/ArvoreBinaria::pesquisa with argument &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>pesquisa<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>pesquisa<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>pesquisa<br/><b>Killed by : </b>none</span></span> removed call to ds/Item::compara &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>pesquisa<br/><b>Killed by : </b>none</span></span> removed call to ds/ArvoreBinaria::pesquisa &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>pesquisa<br/><b>Killed by : </b>none</span></span> replaced return value with null for ds/ArvoreBinaria::pesquisa &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>pesquisa<br/><b>Killed by : </b>none</span></span> removed conditional - replaced comparison check with false &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>pesquisa<br/><b>Killed by : </b>none</span></span> removed conditional - replaced comparison check with true &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>9.<span><b>9</b><br/><b>Location : </b>pesquisa<br/><b>Killed by : </b>none</span></span> mutated return of Object value for ds/ArvoreBinaria::pesquisa to ( if (x != null) null else throw new RuntimeException ) &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@19dfeb17_20'>20</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_20'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>pesquisa<br/><b>Killed by : </b>none</span></span> replaced return value with null for ds/ArvoreBinaria::pesquisa &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>pesquisa<br/><b>Killed by : </b>none</span></span> mutated return of Object value for ds/ArvoreBinaria::pesquisa to ( if (x != null) null else throw new RuntimeException ) &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@19dfeb17_24'>24</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_24'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>insere<br/><b>Killed by : </b>ds.RandoopTest.Randoop0.test059(ds.RandoopTest.Randoop0)</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>insere<br/><b>Killed by : </b>ds.RandoopTest.Randoop0.test059(ds.RandoopTest.Randoop0)</span></span> removed conditional - replaced equality check with false &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>insere<br/><b>Killed by : </b>ds.RandoopTest.Randoop0.test137(ds.RandoopTest.Randoop0)</span></span> removed conditional - replaced equality check with true &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@19dfeb17_25'>25</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_25'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>insere<br/><b>Killed by : </b>ds.RandoopTest.Randoop0.test059(ds.RandoopTest.Randoop0)</span></span> removed call to ds/ArvoreBinaria$No::&#60;init&#62; &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>insere<br/><b>Killed by : </b>none</span></span> Removed assignment to member variable reg &rarr; SURVIVED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@19dfeb17_26'>26</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_26'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>insere<br/><b>Killed by : </b>none</span></span> Removed assignment to member variable esq &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>insere<br/><b>Killed by : </b>none</span></span> Removed assignment to member variable dir &rarr; SURVIVED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@19dfeb17_28'>28</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_28'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>insere<br/><b>Killed by : </b>none</span></span> replaced call to ds/ArvoreBinaria::insere with argument &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>insere<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>insere<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>insere<br/><b>Killed by : </b>none</span></span> removed call to ds/Item::compara &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>insere<br/><b>Killed by : </b>none</span></span> removed call to ds/ArvoreBinaria::insere &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>insere<br/><b>Killed by : </b>none</span></span> removed conditional - replaced comparison check with false &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>insere<br/><b>Killed by : </b>none</span></span> removed conditional - replaced comparison check with true &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>insere<br/><b>Killed by : </b>none</span></span> Removed assignment to member variable esq &rarr; SURVIVED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@19dfeb17_29'>29</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_29'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>insere<br/><b>Killed by : </b>none</span></span> replaced call to ds/ArvoreBinaria::insere with argument &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>insere<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>insere<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>insere<br/><b>Killed by : </b>none</span></span> removed call to ds/Item::compara &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>insere<br/><b>Killed by : </b>none</span></span> removed call to ds/ArvoreBinaria::insere &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>insere<br/><b>Killed by : </b>none</span></span> removed conditional - replaced comparison check with false &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>insere<br/><b>Killed by : </b>none</span></span> removed conditional - replaced comparison check with true &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>insere<br/><b>Killed by : </b>none</span></span> Removed assignment to member variable dir &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@19dfeb17_30'>30</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_30'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>insere<br/><b>Killed by : </b>none</span></span> removed call to java/io/PrintStream::println &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@19dfeb17_31'>31</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_31'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>insere<br/><b>Killed by : </b>ds.RandoopTest.Randoop0.test137(ds.RandoopTest.Randoop0)</span></span> replaced return value with null for ds/ArvoreBinaria::insere &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>insere<br/><b>Killed by : </b>ds.RandoopTest.Randoop0.test137(ds.RandoopTest.Randoop0)</span></span> mutated return of Object value for ds/ArvoreBinaria::insere to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@19dfeb17_34'>34</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_34'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>antecessor<br/><b>Killed by : </b>none</span></span> replaced call to ds/ArvoreBinaria::antecessor with argument &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>antecessor<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>antecessor<br/><b>Killed by : </b>none</span></span> removed call to ds/ArvoreBinaria::antecessor &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>antecessor<br/><b>Killed by : </b>none</span></span> removed conditional - replaced equality check with false &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>antecessor<br/><b>Killed by : </b>none</span></span> removed conditional - replaced equality check with true &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>antecessor<br/><b>Killed by : </b>none</span></span> Removed assignment to member variable dir &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@19dfeb17_35'>35</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_35'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>antecessor<br/><b>Killed by : </b>none</span></span> Removed assignment to member variable reg &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@19dfeb17_36'>36</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_36'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>antecessor<br/><b>Killed by : </b>none</span></span> replaced return value with null for ds/ArvoreBinaria::antecessor &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>antecessor<br/><b>Killed by : </b>none</span></span> mutated return of Object value for ds/ArvoreBinaria::antecessor to ( if (x != null) null else throw new RuntimeException ) &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@19dfeb17_39'>39</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_39'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>retira<br/><b>Killed by : </b>ds.RandoopTest.Randoop0.test054(ds.RandoopTest.Randoop0)</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>retira<br/><b>Killed by : </b>ds.RandoopTest.Randoop0.test054(ds.RandoopTest.Randoop0)</span></span> removed conditional - replaced equality check with false &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>retira<br/><b>Killed by : </b>ds.RandoopTest.Randoop0.test148(ds.RandoopTest.Randoop0)</span></span> removed conditional - replaced equality check with true &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>retira<br/><b>Killed by : </b>none</span></span> removed call to java/io/PrintStream::println &rarr; SURVIVED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@19dfeb17_40'>40</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_40'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>retira<br/><b>Killed by : </b>none</span></span> replaced call to ds/ArvoreBinaria::retira with argument &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>retira<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>retira<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>retira<br/><b>Killed by : </b>none</span></span> removed call to ds/Item::compara &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>retira<br/><b>Killed by : </b>none</span></span> removed call to ds/ArvoreBinaria::retira &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>retira<br/><b>Killed by : </b>none</span></span> removed conditional - replaced comparison check with false &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>retira<br/><b>Killed by : </b>none</span></span> removed conditional - replaced comparison check with true &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>retira<br/><b>Killed by : </b>none</span></span> Removed assignment to member variable esq &rarr; SURVIVED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@19dfeb17_41'>41</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_41'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>retira<br/><b>Killed by : </b>none</span></span> replaced call to ds/ArvoreBinaria::retira with argument &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>retira<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>retira<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>retira<br/><b>Killed by : </b>none</span></span> removed call to ds/Item::compara &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>retira<br/><b>Killed by : </b>none</span></span> removed call to ds/ArvoreBinaria::retira &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>retira<br/><b>Killed by : </b>none</span></span> removed conditional - replaced comparison check with false &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>retira<br/><b>Killed by : </b>none</span></span> removed conditional - replaced comparison check with true &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>retira<br/><b>Killed by : </b>none</span></span> Removed assignment to member variable dir &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@19dfeb17_43'>43</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_43'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>retira<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>retira<br/><b>Killed by : </b>none</span></span> removed conditional - replaced equality check with false &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>retira<br/><b>Killed by : </b>none</span></span> removed conditional - replaced equality check with true &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@19dfeb17_44'>44</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_44'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>retira<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>retira<br/><b>Killed by : </b>none</span></span> removed conditional - replaced equality check with false &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>retira<br/><b>Killed by : </b>none</span></span> removed conditional - replaced equality check with true &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@19dfeb17_45'>45</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_45'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>retira<br/><b>Killed by : </b>none</span></span> replaced call to ds/ArvoreBinaria::antecessor with argument &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>retira<br/><b>Killed by : </b>none</span></span> removed call to ds/ArvoreBinaria::antecessor &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>retira<br/><b>Killed by : </b>none</span></span> Removed assignment to member variable esq &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@19dfeb17_47'>47</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_47'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>retira<br/><b>Killed by : </b>none</span></span> replaced return value with null for ds/ArvoreBinaria::retira &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>retira<br/><b>Killed by : </b>ds.RandoopTest.Randoop0.test054(ds.RandoopTest.Randoop0)</span></span> mutated return of Object value for ds/ArvoreBinaria::retira to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@19dfeb17_51'>51</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_51'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b><init><br/><b>Killed by : </b>none</span></span> Removed assignment to member variable raiz &rarr; SURVIVED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@19dfeb17_55'>55</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_55'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>pesquisa<br/><b>Killed by : </b>ds.RandoopTest.Randoop0.test147(ds.RandoopTest.Randoop0)</span></span> replaced call to ds/ArvoreBinaria::pesquisa with argument &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>pesquisa<br/><b>Killed by : </b>ds.RandoopTest.Randoop0.test147(ds.RandoopTest.Randoop0)</span></span> removed call to ds/ArvoreBinaria::pesquisa &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>pesquisa<br/><b>Killed by : </b>none</span></span> replaced return value with null for ds/ArvoreBinaria::pesquisa &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>pesquisa<br/><b>Killed by : </b>ds.RandoopTest.Randoop0.test054(ds.RandoopTest.Randoop0)</span></span> mutated return of Object value for ds/ArvoreBinaria::pesquisa to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@19dfeb17_59'>59</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_59'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>insere<br/><b>Killed by : </b>ds.RandoopTest.Randoop0.test137(ds.RandoopTest.Randoop0)</span></span> replaced call to ds/ArvoreBinaria::insere with argument &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>insere<br/><b>Killed by : </b>ds.RandoopTest.Randoop0.test137(ds.RandoopTest.Randoop0)</span></span> removed call to ds/ArvoreBinaria::insere &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>insere<br/><b>Killed by : </b>ds.RandoopTest.Randoop0.test137(ds.RandoopTest.Randoop0)</span></span> Removed assignment to member variable raiz &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@19dfeb17_63'>63</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_63'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>retira<br/><b>Killed by : </b>ds.RandoopTest.Randoop0.test148(ds.RandoopTest.Randoop0)</span></span> replaced call to ds/ArvoreBinaria::retira with argument &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>retira<br/><b>Killed by : </b>ds.RandoopTest.Randoop0.test148(ds.RandoopTest.Randoop0)</span></span> removed call to ds/ArvoreBinaria::retira &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>retira<br/><b>Killed by : </b>none</span></span> Removed assignment to member variable raiz &rarr; SURVIVED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@19dfeb17_68'>68</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_68'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>testa<br/><b>Killed by : </b>ds.RandoopTest.Randoop0.test361(ds.RandoopTest.Randoop0)</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>testa<br/><b>Killed by : </b>ds.RandoopTest.Randoop0.test361(ds.RandoopTest.Randoop0)</span></span> removed conditional - replaced equality check with false &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>testa<br/><b>Killed by : </b>none</span></span> removed conditional - replaced equality check with true &rarr; SURVIVED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@19dfeb17_69'>69</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_69'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>testa<br/><b>Killed by : </b>ds.RandoopTest.Randoop0.test148(ds.RandoopTest.Randoop0)</span></span> negated conditional &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>testa<br/><b>Killed by : </b>none</span></span> removed conditional - replaced equality check with false &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>testa<br/><b>Killed by : </b>ds.RandoopTest.Randoop0.test148(ds.RandoopTest.Randoop0)</span></span> removed conditional - replaced equality check with true &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@19dfeb17_70'>70</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_70'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>testa<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>testa<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>testa<br/><b>Killed by : </b>none</span></span> removed call to ds/Item::compara &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>testa<br/><b>Killed by : </b>none</span></span> removed conditional - replaced comparison check with false &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>testa<br/><b>Killed by : </b>none</span></span> removed conditional - replaced comparison check with true &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@19dfeb17_71'>71</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_71'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>testa<br/><b>Killed by : </b>none</span></span> removed call to java/lang/StringBuilder::&#60;init&#62; &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>testa<br/><b>Killed by : </b>none</span></span> removed call to java/lang/StringBuilder::append &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>testa<br/><b>Killed by : </b>none</span></span> removed call to java/lang/Object::toString &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>testa<br/><b>Killed by : </b>none</span></span> removed call to java/lang/StringBuilder::append &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>testa<br/><b>Killed by : </b>none</span></span> removed call to java/lang/StringBuilder::append &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>testa<br/><b>Killed by : </b>none</span></span> removed call to java/lang/Object::toString &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>testa<br/><b>Killed by : </b>none</span></span> removed call to java/lang/StringBuilder::append &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>testa<br/><b>Killed by : </b>none</span></span> removed call to java/lang/StringBuilder::toString &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>9.<span><b>9</b><br/><b>Location : </b>testa<br/><b>Killed by : </b>none</span></span> removed call to java/io/PrintStream::println &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>10.<span><b>10</b><br/><b>Location : </b>testa<br/><b>Killed by : </b>none</span></span> replaced call to java/lang/StringBuilder::append with receiver &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>11.<span><b>11</b><br/><b>Location : </b>testa<br/><b>Killed by : </b>none</span></span> replaced call to java/lang/StringBuilder::append with receiver &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>12.<span><b>12</b><br/><b>Location : </b>testa<br/><b>Killed by : </b>none</span></span> replaced call to java/lang/StringBuilder::append with receiver &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>13.<span><b>13</b><br/><b>Location : </b>testa<br/><b>Killed by : </b>none</span></span> replaced call to java/lang/StringBuilder::append with receiver &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@19dfeb17_72'>72</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_72'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>testa<br/><b>Killed by : </b>none</span></span> Substituted 1 with 0 &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>testa<br/><b>Killed by : </b>none</span></span> removed call to java/lang/System::exit &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@19dfeb17_75'>75</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_75'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>testa<br/><b>Killed by : </b>ds.RandoopTest.Randoop0.test148(ds.RandoopTest.Randoop0)</span></span> negated conditional &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>testa<br/><b>Killed by : </b>none</span></span> removed conditional - replaced equality check with false &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>testa<br/><b>Killed by : </b>ds.RandoopTest.Randoop0.test148(ds.RandoopTest.Randoop0)</span></span> removed conditional - replaced equality check with true &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@19dfeb17_76'>76</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_76'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>testa<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>testa<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>testa<br/><b>Killed by : </b>none</span></span> removed call to ds/Item::compara &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>testa<br/><b>Killed by : </b>none</span></span> removed conditional - replaced comparison check with false &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>testa<br/><b>Killed by : </b>none</span></span> removed conditional - replaced comparison check with true &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@19dfeb17_77'>77</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_77'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>testa<br/><b>Killed by : </b>none</span></span> removed call to java/lang/StringBuilder::&#60;init&#62; &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>testa<br/><b>Killed by : </b>none</span></span> removed call to java/lang/StringBuilder::append &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>testa<br/><b>Killed by : </b>none</span></span> removed call to java/lang/Object::toString &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>testa<br/><b>Killed by : </b>none</span></span> removed call to java/lang/StringBuilder::append &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>testa<br/><b>Killed by : </b>none</span></span> removed call to java/lang/StringBuilder::append &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>testa<br/><b>Killed by : </b>none</span></span> removed call to java/lang/Object::toString &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>testa<br/><b>Killed by : </b>none</span></span> removed call to java/lang/StringBuilder::append &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>testa<br/><b>Killed by : </b>none</span></span> removed call to java/lang/StringBuilder::toString &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>9.<span><b>9</b><br/><b>Location : </b>testa<br/><b>Killed by : </b>none</span></span> removed call to java/io/PrintStream::println &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>10.<span><b>10</b><br/><b>Location : </b>testa<br/><b>Killed by : </b>none</span></span> replaced call to java/lang/StringBuilder::append with receiver &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>11.<span><b>11</b><br/><b>Location : </b>testa<br/><b>Killed by : </b>none</span></span> replaced call to java/lang/StringBuilder::append with receiver &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>12.<span><b>12</b><br/><b>Location : </b>testa<br/><b>Killed by : </b>none</span></span> replaced call to java/lang/StringBuilder::append with receiver &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>13.<span><b>13</b><br/><b>Location : </b>testa<br/><b>Killed by : </b>none</span></span> replaced call to java/lang/StringBuilder::append with receiver &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@19dfeb17_78'>78</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_78'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>testa<br/><b>Killed by : </b>none</span></span> Substituted 1 with 0 &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>testa<br/><b>Killed by : </b>none</span></span> removed call to java/lang/System::exit &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@19dfeb17_81'>81</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_81'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>testa<br/><b>Killed by : </b>none</span></span> removed call to ds/ArvoreBinaria::testa &rarr; SURVIVED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@19dfeb17_82'>82</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_82'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>testa<br/><b>Killed by : </b>none</span></span> removed call to ds/ArvoreBinaria::testa &rarr; SURVIVED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@19dfeb17_85'>85</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@19dfeb17_85'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>testa<br/><b>Killed by : </b>none</span></span> removed call to ds/ArvoreBinaria::testa &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+<li class='mutator'>RETURN_VALS_MUTATOR</li>
+<li class='mutator'>BOOLEAN_TRUE_RETURN</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_61</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_60</li>
+<li class='mutator'>CONDITIONALS_BOUNDARY_MUTATOR</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_56</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_55</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_58</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_57</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_52</li>
+<li class='mutator'>VOID_METHOD_CALL_MUTATOR</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_51</li>
+<li class='mutator'>NULL_RETURN_VALUES</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_54</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_53</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_59</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_50</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_45</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_44</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_47</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_46</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_41</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_40</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_43</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_42</li>
+<li class='mutator'>NEGATE_CONDITIONALS_MUTATOR</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_49</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_48</li>
+<li class='mutator'>INLINE_CONSTANT_MUTATOR</li>
+<li class='mutator'>CONSTRUCTOR_CALL_MUTATOR</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_34</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_33</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_36</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_35</li>
+<li class='mutator'>EXPERIMENTAL_MEMBER_VARIABLE_MUTATOR</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_30</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_32</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_31</li>
+<li class='mutator'>REMOVE_CONDITIONALS_ORDER_ELSE_MUTATOR</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_38</li>
+<li class='mutator'>BOOLEAN_FALSE_RETURN</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_37</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_39</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_3</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_2</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_1</li>
+<li class='mutator'>INVERT_NEGS_MUTATOR</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_0</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_23</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_22</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_25</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_9</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_24</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_8</li>
+<li class='mutator'>EMPTY_RETURN_VALUES</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_7</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_6</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_21</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_5</li>
+<li class='mutator'>NAKED_RECEIVER</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_20</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_4</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_27</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_26</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_29</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_28</li>
+<li class='mutator'>PRIMITIVE_RETURN_VALS_MUTATOR</li>
+<li class='mutator'>REMOVE_INCREMENTS_MUTATOR</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_12</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_11</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_99</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_14</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_13</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_96</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_95</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_10</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_98</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_97</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_19</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_16</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_15</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_18</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_17</li>
+<li class='mutator'>EXPERIMENTAL_SWITCH_MUTATOR</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_92</li>
+<li class='mutator'>ARGUMENT_PROPAGATION_MUTATOR</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_91</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_94</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_93</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_90</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_89</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_88</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_85</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_84</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_87</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_86</li>
+<li class='mutator'>MATH_MUTATOR</li>
+<li class='mutator'>NON_VOID_METHOD_CALL_MUTATOR</li>
+<li class='mutator'>REMOVE_CONDITIONALS_EQUAL_IF_MUTATOR</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_81</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_80</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_83</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_82</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_78</li>
+<li class='mutator'>REMOVE_CONDITIONALS_EQUAL_ELSE_MUTATOR</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_77</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_79</li>
+<li class='mutator'>INCREMENTS_MUTATOR</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_74</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_73</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_76</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_75</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_70</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_72</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_71</li>
+<li class='mutator'>REMOVE_CONDITIONALS_ORDER_IF_MUTATOR</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_67</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_66</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_69</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_68</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_63</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_62</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_65</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_64</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>ds.RandoopTest.Randoop0.test158(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test048(ds.RandoopTest.Randoop0) (14 ms)</li><li>ds.RandoopTest.Randoop0.test061(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test171(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test195(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test293(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test085(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test183(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test101(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test073(ds.RandoopTest.Randoop0) (4 ms)</li><li>ds.RandoopTest.Randoop0.test317(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test211(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test281(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test003(ds.RandoopTest.Randoop0) (29 ms)</li><li>ds.RandoopTest.Randoop0.test207(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test321(ds.RandoopTest.Randoop0) (8 ms)</li><li>ds.RandoopTest.Randoop0.test109(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test113(ds.RandoopTest.Randoop0) (40 ms)</li><li>ds.RandoopTest.Randoop0.test223(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test097(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test219(ds.RandoopTest.Randoop0) (31 ms)</li><li>ds.RandoopTest.Randoop0.test333(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test329(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test015(ds.RandoopTest.Randoop0) (22 ms)</li><li>ds.RandoopTest.Randoop0.test192(ds.RandoopTest.Randoop0) (4 ms)</li><li>ds.RandoopTest.Randoop0.test305(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test110(ds.RandoopTest.Randoop0) (5 ms)</li><li>ds.RandoopTest.Randoop0.test180(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test330(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test122(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test260(ds.RandoopTest.Randoop0) (5 ms)</li><li>ds.RandoopTest.Randoop0.test308(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test052(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test342(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test040(ds.RandoopTest.Randoop0) (4 ms)</li><li>ds.RandoopTest.Randoop0.test134(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test284(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test076(ds.RandoopTest.Randoop0) (4 ms)</li><li>ds.RandoopTest.Randoop0.test146(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test354(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test064(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test272(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test300(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test198(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test088(ds.RandoopTest.Randoop0) (10 ms)</li><li>ds.RandoopTest.Randoop0.test008(ds.RandoopTest.Randoop0) (15 ms)</li><li>ds.RandoopTest.Randoop0.test338(ds.RandoopTest.Randoop0) (1 ms)</li><li>ds.RandoopTest.Randoop0.test326(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test241(ds.RandoopTest.Randoop0) (10 ms)</li><li>ds.RandoopTest.Randoop0.test314(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test091(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test143(ds.RandoopTest.Randoop0) (1 ms)</li><li>ds.RandoopTest.Randoop0.test302(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test131(ds.RandoopTest.Randoop0) (39 ms)</li><li>ds.RandoopTest.Randoop0.test155(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test253(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test259(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test265(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test167(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test141(ds.RandoopTest.Randoop0) (1 ms)</li><li>ds.RandoopTest.Randoop0.test179(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test277(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test357(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test153(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test251(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test289(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test247(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test345(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test235(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test165(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test082(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test152(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test140(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test094(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test177(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test359(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test347(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test189(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test335(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test176(ds.RandoopTest.Randoop0) (1 ms)</li><li>ds.RandoopTest.Randoop0.test070(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test164(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test162(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test323(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test220(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test092(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test188(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test348(ds.RandoopTest.Randoop0) (13 ms)</li><li>ds.RandoopTest.Randoop0.test150(ds.RandoopTest.Randoop0) (1 ms)</li><li>ds.RandoopTest.Randoop0.test336(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test232(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test244(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test324(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test186(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test312(ds.RandoopTest.Randoop0) (5 ms)</li><li>ds.RandoopTest.Randoop0.test256(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test174(ds.RandoopTest.Randoop0) (1 ms)</li><li>ds.RandoopTest.Randoop0.test080(ds.RandoopTest.Randoop0) (4 ms)</li><li>ds.RandoopTest.Randoop0.test268(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test340(ds.RandoopTest.Randoop0) (1 ms)</li><li>ds.RandoopTest.Randoop0.test087(ds.RandoopTest.Randoop0) (4 ms)</li><li>ds.RandoopTest.Randoop0.test242(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test075(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test230(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test327(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test201(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test254(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test099(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test119(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test217(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test352(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test009(ds.RandoopTest.Randoop0) (4 ms)</li><li>ds.RandoopTest.Randoop0.test266(ds.RandoopTest.Randoop0) (1 ms)</li><li>ds.RandoopTest.Randoop0.test315(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test339(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test364(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test229(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test278(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test303(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test205(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test356(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test107(ds.RandoopTest.Randoop0) (4 ms)</li><li>ds.RandoopTest.Randoop0.test071(ds.RandoopTest.Randoop0) (4 ms)</li><li>ds.RandoopTest.Randoop0.test320(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test250(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test055(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test067(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test332(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test274(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test307(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test079(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test344(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test111(ds.RandoopTest.Randoop0) (13 ms)</li><li>ds.RandoopTest.Randoop0.test249(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test286(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test123(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test262(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test319(ds.RandoopTest.Randoop0) (7 ms)</li><li>ds.RandoopTest.Randoop0.test237(ds.RandoopTest.Randoop0) (1 ms)</li><li>ds.RandoopTest.Randoop0.test225(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test029(ds.RandoopTest.Randoop0) (16 ms)</li><li>ds.RandoopTest.Randoop0.test135(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test298(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test005(ds.RandoopTest.Randoop0) (19 ms)</li><li>ds.RandoopTest.Randoop0.test017(ds.RandoopTest.Randoop0) (40 ms)</li><li>ds.RandoopTest.Randoop0.test190(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test213(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test169(ds.RandoopTest.Randoop0) (4 ms)</li><li>ds.RandoopTest.Randoop0.test063(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test051(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test047(ds.RandoopTest.Randoop0) (13 ms)</li><li>ds.RandoopTest.Randoop0.test296(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test294(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test159(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test147(ds.RandoopTest.Randoop0) (1 ms)</li><li>ds.RandoopTest.Randoop0.test049(ds.RandoopTest.Randoop0) (10 ms)</li><li>ds.RandoopTest.Randoop0.test021(ds.RandoopTest.Randoop0) (16 ms)</li><li>ds.RandoopTest.Randoop0.test282(ds.RandoopTest.Randoop0) (1 ms)</li><li>ds.RandoopTest.Randoop0.test270(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test037(ds.RandoopTest.Randoop0) (4 ms)</li><li>ds.RandoopTest.Randoop0.test033(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test280(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test045(ds.RandoopTest.Randoop0) (15 ms)</li><li>ds.RandoopTest.Randoop0.test292(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test057(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test069(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test039(ds.RandoopTest.Randoop0) (17 ms)</li><li>ds.RandoopTest.Randoop0.test043(ds.RandoopTest.Randoop0) (17 ms)</li><li>ds.RandoopTest.Randoop0.test149(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test137(ds.RandoopTest.Randoop0) (1 ms)</li><li>ds.RandoopTest.Randoop0.test031(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test027(ds.RandoopTest.Randoop0) (17 ms)</li><li>ds.RandoopTest.Randoop0.test360(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test125(ds.RandoopTest.Randoop0) (4 ms)</li><li>ds.RandoopTest.Randoop0.test290(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test139(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test209(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test013(ds.RandoopTest.Randoop0) (22 ms)</li><li>ds.RandoopTest.Randoop0.test127(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test025(ds.RandoopTest.Randoop0) (16 ms)</li><li>ds.RandoopTest.Randoop0.test115(ds.RandoopTest.Randoop0) (9 ms)</li><li>ds.RandoopTest.Randoop0.test011(ds.RandoopTest.Randoop0) (12 ms)</li><li>ds.RandoopTest.Randoop0.test103(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test059(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test023(ds.RandoopTest.Randoop0) (21 ms)</li><li>ds.RandoopTest.Randoop0.test117(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test035(ds.RandoopTest.Randoop0) (5 ms)</li><li>ds.RandoopTest.Randoop0.test129(ds.RandoopTest.Randoop0) (4 ms)</li><li>ds.RandoopTest.Randoop0.test105(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test215(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test007(ds.RandoopTest.Randoop0) (47 ms)</li><li>ds.RandoopTest.Randoop0.test313(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test203(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test301(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test020(ds.RandoopTest.Randoop0) (32 ms)</li><li>ds.RandoopTest.Randoop0.test090(ds.RandoopTest.Randoop0) (4 ms)</li><li>ds.RandoopTest.Randoop0.test350(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test142(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test252(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test130(ds.RandoopTest.Randoop0) (11 ms)</li><li>ds.RandoopTest.Randoop0.test044(ds.RandoopTest.Randoop0) (16 ms)</li><li>ds.RandoopTest.Randoop0.test240(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test032(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test056(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test264(ds.RandoopTest.Randoop0) (4 ms)</li><li>ds.RandoopTest.Randoop0.test154(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test276(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test358(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test362(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test166(ds.RandoopTest.Randoop0) (4 ms)</li><li>ds.RandoopTest.Randoop0.test068(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test248(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test288(ds.RandoopTest.Randoop0) (9 ms)</li><li>ds.RandoopTest.Randoop0.test236(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test028(ds.RandoopTest.Randoop0) (35 ms)</li><li>ds.RandoopTest.Randoop0.test016(ds.RandoopTest.Randoop0) (26 ms)</li><li>ds.RandoopTest.Randoop0.test224(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test261(ds.RandoopTest.Randoop0) (4 ms)</li><li>ds.RandoopTest.Randoop0.test053(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test041(ds.RandoopTest.Randoop0) (12 ms)</li><li>ds.RandoopTest.Randoop0.test004(ds.RandoopTest.Randoop0) (35 ms)</li><li>ds.RandoopTest.Randoop0.test285(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test309(ds.RandoopTest.Randoop0) (30 ms)</li><li>ds.RandoopTest.Randoop0.test077(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test065(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test273(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test297(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test019(ds.RandoopTest.Randoop0) (38 ms)</li><li>ds.RandoopTest.Randoop0.test121(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test191(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test089(ds.RandoopTest.Randoop0) (13 ms)</li><li>ds.RandoopTest.Randoop0.test239(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test341(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test227(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test133(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test145(ds.RandoopTest.Randoop0) (1 ms)</li><li>ds.RandoopTest.Randoop0.test062(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test255(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test157(ds.RandoopTest.Randoop0) (10 ms)</li><li>ds.RandoopTest.Randoop0.test269(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test267(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test086(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test257(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test050(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test184(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test074(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test160(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test200(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test172(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test310(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test182(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test316(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test212(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test098(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test196(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test322(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test328(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test096(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test304(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test060(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test194(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test170(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test084(ds.RandoopTest.Randoop0) (4 ms)</li><li>ds.RandoopTest.Randoop0.test072(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test178(ds.RandoopTest.Randoop0) (1 ms)</li><li>ds.RandoopTest.Randoop0.test346(ds.RandoopTest.Randoop0) (1 ms)</li><li>ds.RandoopTest.Randoop0.test095(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test210(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test222(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test081(ds.RandoopTest.Randoop0) (10 ms)</li><li>ds.RandoopTest.Randoop0.test334(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test234(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test221(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test083(ds.RandoopTest.Randoop0) (4 ms)</li><li>ds.RandoopTest.Randoop0.test151(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test233(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test175(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test245(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test349(ds.RandoopTest.Randoop0) (5 ms)</li><li>ds.RandoopTest.Randoop0.test279(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test163(ds.RandoopTest.Randoop0) (8 ms)</li><li>ds.RandoopTest.Randoop0.test161(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test199(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test337(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test093(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test187(ds.RandoopTest.Randoop0) (5 ms)</li><li>ds.RandoopTest.Randoop0.test325(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test243(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test231(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test185(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test022(ds.RandoopTest.Randoop0) (17 ms)</li><li>ds.RandoopTest.Randoop0.test283(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test295(ds.RandoopTest.Randoop0) (9 ms)</li><li>ds.RandoopTest.Randoop0.test120(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test173(ds.RandoopTest.Randoop0) (1 ms)</li><li>ds.RandoopTest.Randoop0.test132(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test271(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test034(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test046(ds.RandoopTest.Randoop0) (19 ms)</li><li>ds.RandoopTest.Randoop0.test144(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test156(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test311(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test058(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test197(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test168(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test258(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test148(ds.RandoopTest.Randoop0) (1 ms)</li><li>ds.RandoopTest.Randoop0.test246(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test038(ds.RandoopTest.Randoop0) (5 ms)</li><li>ds.RandoopTest.Randoop0.test136(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test026(ds.RandoopTest.Randoop0) (26 ms)</li><li>ds.RandoopTest.Randoop0.test042(ds.RandoopTest.Randoop0) (28 ms)</li><li>ds.RandoopTest.Randoop0.test306(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test112(ds.RandoopTest.Randoop0) (12 ms)</li><li>ds.RandoopTest.Randoop0.test124(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test318(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test263(ds.RandoopTest.Randoop0) (9 ms)</li><li>ds.RandoopTest.Randoop0.test275(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test030(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test066(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test181(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test287(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test054(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test193(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test299(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test078(ds.RandoopTest.Randoop0) (4 ms)</li><li>ds.RandoopTest.Randoop0.test331(ds.RandoopTest.Randoop0) (4 ms)</li><li>ds.RandoopTest.Randoop0.test238(ds.RandoopTest.Randoop0) (1 ms)</li><li>ds.RandoopTest.Randoop0.test343(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test355(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test226(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test018(ds.RandoopTest.Randoop0) (36 ms)</li><li>ds.RandoopTest.Randoop0.test006(ds.RandoopTest.Randoop0) (69 ms)</li><li>ds.RandoopTest.Randoop0.test214(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test202(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test118(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test353(ds.RandoopTest.Randoop0) (1 ms)</li><li>ds.RandoopTest.Randoop0.test216(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test228(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test204(ds.RandoopTest.Randoop0) (7 ms)</li><li>ds.RandoopTest.Randoop0.test106(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test351(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test363(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test102(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test218(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test108(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test100(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test206(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test138(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test002(ds.RandoopTest.Randoop0) (345 ms)</li><li>ds.RandoopTest.Randoop0.test208(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test014(ds.RandoopTest.Randoop0) (26 ms)</li><li>ds.RandoopTest.Randoop0.test361(ds.RandoopTest.Randoop0) (1 ms)</li><li>ds.RandoopTest.Randoop0.test126(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test291(ds.RandoopTest.Randoop0) (6 ms)</li><li>ds.RandoopTest.Randoop0.test114(ds.RandoopTest.Randoop0) (13 ms)</li><li>ds.RandoopTest.Randoop0.test012(ds.RandoopTest.Randoop0) (23 ms)</li><li>ds.RandoopTest.Randoop0.test024(ds.RandoopTest.Randoop0) (25 ms)</li><li>ds.RandoopTest.Randoop0.test128(ds.RandoopTest.Randoop0) (3 ms)</li><li>ds.RandoopTest.Randoop0.test036(ds.RandoopTest.Randoop0) (4 ms)</li><li>ds.RandoopTest.Randoop0.test116(ds.RandoopTest.Randoop0) (2 ms)</li><li>ds.RandoopTest.Randoop0.test010(ds.RandoopTest.Randoop0) (8 ms)</li><li>ds.RandoopTest.Randoop0.test104(ds.RandoopTest.Randoop0) (2 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='http://pitest.org'>PIT</a> 1.3.2
+
+</body>
+</html>

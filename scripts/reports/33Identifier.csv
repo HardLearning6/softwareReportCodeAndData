@@ -1,0 +1,5 @@
+PRJ;FolderName;Cobertos;Gerados;Cobertura;Mortos;Total;Escore
+33Identifier;ds.EvoSuiteTest.Evo;22;22;100%;62;114;54%
+33Identifier;ds.RandoopTest.Randoop;20;22;91%;59;114;52%
+33Identifier;ds.RandoopTest.Randoop0;20;22;91%;59;114;52%
+33Identifier;ds.EvoSuiteTest.Identifier_ESTest_scaffolding;0;22;0%;0;114;0%

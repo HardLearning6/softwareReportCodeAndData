@@ -1,0 +1,7 @@
+PRJ;FolderName;Cobertos;Gerados;Cobertura;Mortos;Total;Escore
+31CasamentoExato;ds.EvoSuiteTest.CasamentoExato_ESTest_scaffolding;0;40;0%;0;205;0%
+31CasamentoExato;ds.EvoSuiteTest.Evo;40;40;100%;84;205;41%
+31CasamentoExato;ds.RandoopTest.Randoop1;39;40;98%;118;205;58%
+31CasamentoExato;ds.RandoopTest.Randoop2;38;40;95%;80;205;39%
+31CasamentoExato;ds.RandoopTest.Randoop;40;40;100%;118;205;58%
+31CasamentoExato;ds.RandoopTest.Randoop0;40;40;100%;110;205;54%

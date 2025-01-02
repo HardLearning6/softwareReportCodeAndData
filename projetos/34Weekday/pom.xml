@@ -1,0 +1,105 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- 项目基本信息 -->
+  <groupId>34Weekday</groupId> <!-- 更改 groupId -->
+  <artifactId>34Weekday</artifactId> <!-- 更改 artifactId -->
+  <version>1.0.0</version> <!-- 更改版本号 -->
+  <packaging>jar</packaging>
+
+  <name>example-project</name> <!-- 更改项目名称 -->
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <junit.version>4.13.1</junit.version> <!-- 更改 JUnit 版本 -->
+    <surefire.version>2.22.1</surefire.version> <!-- 更改 Surefire 插件版本 -->
+    <pitest.version>1.4.4</pitest.version> <!-- 更改 Pitest 插件版本 -->
+    <evosuite.version>1.0.6</evosuite.version> <!-- 保持 EvoSuite 插件版本 -->
+  </properties>
+
+  <build>
+    <plugins>
+      <!-- Surefire 插件配置 -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>${surefire.version}</version>
+        <configuration>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+          <forkCount>1</forkCount>
+          <reuseForks>true</reuseForks>
+          <runOrder>random</runOrder>
+        </configuration>
+      </plugin>
+
+      <!-- Pitest 插件配置 -->
+      <plugin>
+        <groupId>org.pitest</groupId>
+        <artifactId>pitest-maven</artifactId>
+        <version>${pitest.version}</version>
+        <configuration>
+          <targetClasses>
+            <param>${className}</param>
+          </targetClasses>
+          <targetTests>
+            <param>${testName}</param>
+          </targetTests>
+          <timestampedReports>false</timestampedReports>
+          <mutators>
+            <mutator>ALL</mutator>
+          </mutators>
+          <outputFormats>
+            <param>CSV</param>
+            <param>XML</param>
+            <param>HTML</param>
+          </outputFormats>
+          <reportsDirectory>reports/${testName}</reportsDirectory>
+        </configuration>
+      </plugin>
+
+      <!-- EvoSuite 插件配置 -->
+      <plugin>
+        <groupId>org.evosuite.plugins</groupId>
+        <artifactId>evosuite-maven-plugin</artifactId>
+        <version>${evosuite.version}</version>
+      </plugin>
+    </plugins>
+  </build>
+
+  <dependencies>
+    <!-- Pitest 依赖 -->
+    <dependency>
+      <groupId>org.pitest</groupId>
+      <artifactId>pitest-maven</artifactId>
+      <version>${pitest.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- JUnit 依赖 -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>${junit.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- EvoSuite 依赖 -->
+    <dependency>
+      <groupId>org.evosuite.plugins</groupId>
+      <artifactId>evosuite-maven-plugin</artifactId>
+      <version>${evosuite.version}</version>
+    </dependency>
+
+    <!-- JUnit 依赖（版本 4.13.2） -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.13.2</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>

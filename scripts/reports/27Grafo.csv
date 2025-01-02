@@ -1,0 +1,5 @@
+PRJ;FolderName;Cobertos;Gerados;Cobertura;Mortos;Total;Escore
+27Grafo;ds.EvoSuiteTest.Evo;33;33;100%;77;108;71%
+27Grafo;ds.EvoSuiteTest.Grafo_ESTest_scaffolding;0;33;0%;0;108;0%
+27Grafo;ds.RandoopTest.Randoop;33;33;100%;88;108;81%
+27Grafo;ds.RandoopTest.Randoop0;33;33;100%;88;108;81%

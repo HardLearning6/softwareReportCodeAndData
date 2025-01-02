@@ -1,0 +1,6 @@
+PRJ;FolderName;Cobertos;Gerados;Cobertura;Mortos;Total;Escore
+30Lista;ds.EvoSuiteTest.Evo;32;32;100%;23;76;30%
+30Lista;ds.EvoSuiteTest.AgmPrim_ESTest_scaffolding;0;32;0%;0;76;0%
+30Lista;ds.gptTest.AgmPrimTest;32;32;100%;50;76;66%
+30Lista;ds.RandoopTest.Randoop;9;32;28%;1;76;1%
+30Lista;ds.RandoopTest.Randoop0;9;32;28%;1;76;1%

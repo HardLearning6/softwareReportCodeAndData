@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: ds.RandoopTest.ErrorTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.235 sec <<< FAILURE! - in ds.RandoopTest.ErrorTest
+test1(ds.RandoopTest.ErrorTest0)  Time elapsed: 0.045 sec  <<< ERROR!
+java.lang.NullPointerException
+	at ds.RandoopTest.ErrorTest0.test1(ErrorTest0.java:26)
+
+test2(ds.RandoopTest.ErrorTest0)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+	at ds.RandoopTest.ErrorTest0.test2(ErrorTest0.java:41)
+
+test3(ds.RandoopTest.ErrorTest0)  Time elapsed: 0.019 sec  <<< ERROR!
+java.lang.NullPointerException
+	at ds.RandoopTest.ErrorTest0.test3(ErrorTest0.java:57)
+
+test4(ds.RandoopTest.ErrorTest0)  Time elapsed: 0.002 sec  <<< ERROR!
+java.lang.NullPointerException
+	at ds.RandoopTest.ErrorTest0.test4(ErrorTest0.java:70)
+

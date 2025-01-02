@@ -1,0 +1,1485 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>CasamentoExato.java</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_1'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package ds;</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_2'></a>
+<span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>public class CasamentoExato {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_3'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>  private static final int maxChar = 256;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_4'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>  public static void forcaBruta (String T, int n, String P, int m) {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_5'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    // @{\it Pesquisa P[0..m-1] em T[0..n-1]}@</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_6'/>
+6
+</td>
+<td class='uncertain'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_6'>10</a>
+<span>
+1. forcaBruta : Changed increment from 1 to -1 &rarr; TIMED_OUT<br/>
+2. forcaBruta : removed conditional - replaced comparison check with true &rarr; TIMED_OUT<br/>
+3. forcaBruta : Removed increment 1 &rarr; TIMED_OUT<br/>
+4. forcaBruta : changed conditional boundary &rarr; KILLED<br/>
+5. forcaBruta : Substituted 0 with 1 &rarr; KILLED<br/>
+6. forcaBruta : Substituted 1 with 0 &rarr; KILLED<br/>
+7. forcaBruta : Replaced integer subtraction with addition &rarr; KILLED<br/>
+8. forcaBruta : Replaced integer addition with subtraction &rarr; KILLED<br/>
+9. forcaBruta : negated conditional &rarr; KILLED<br/>
+10. forcaBruta : removed conditional - replaced comparison check with false &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='uncertain'>    for (int i = 0; i &#60; (n - m + 1); i ++) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_7'/>
+7
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_7'>1</a>
+<span>
+1. forcaBruta : Substituted 0 with 1 &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>      int k = i; int j = 0;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_8'/>
+8
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_8'>12</a>
+<span>
+1. forcaBruta : Changed increment from 1 to -1 &rarr; SURVIVED<br/>
+2. forcaBruta : removed conditional - replaced equality check with true &rarr; SURVIVED<br/>
+3. forcaBruta : changed conditional boundary &rarr; KILLED<br/>
+4. forcaBruta : Changed increment from 1 to -1 &rarr; KILLED<br/>
+5. forcaBruta : negated conditional &rarr; KILLED<br/>
+6. forcaBruta : negated conditional &rarr; KILLED<br/>
+7. forcaBruta : removed call to java/lang/String::charAt &rarr; KILLED<br/>
+8. forcaBruta : removed call to java/lang/String::charAt &rarr; KILLED<br/>
+9. forcaBruta : removed conditional - replaced equality check with false &rarr; KILLED<br/>
+10. forcaBruta : removed conditional - replaced comparison check with false &rarr; KILLED<br/>
+11. forcaBruta : removed conditional - replaced comparison check with true &rarr; KILLED<br/>
+12. forcaBruta : Removed increment 1 &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>      while ((j &#60; m) &#38;&#38; (T.charAt (k) == P.charAt (j))) { j++; k++; }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_9'/>
+9
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_9'>10</a>
+<span>
+1. forcaBruta : negated conditional &rarr; SURVIVED<br/>
+2. forcaBruta : removed call to java/lang/StringBuilder::toString &rarr; SURVIVED<br/>
+3. forcaBruta : removed conditional - replaced equality check with false &rarr; SURVIVED<br/>
+4. forcaBruta : removed conditional - replaced equality check with true &rarr; SURVIVED<br/>
+5. forcaBruta : removed call to java/io/PrintStream::println &rarr; SURVIVED<br/>
+6. forcaBruta : replaced call to java/lang/StringBuilder::append with receiver &rarr; SURVIVED<br/>
+7. forcaBruta : replaced call to java/lang/StringBuilder::append with receiver &rarr; SURVIVED<br/>
+8. forcaBruta : removed call to java/lang/StringBuilder::&#60;init&#62; &rarr; KILLED<br/>
+9. forcaBruta : removed call to java/lang/StringBuilder::append &rarr; KILLED<br/>
+10. forcaBruta : removed call to java/lang/StringBuilder::append &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>      if (j == m) System.out.println (&#34;Casamento na posicao: &#34; + i);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_10'/>
+10
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_10'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_11'/>
+11
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_11'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>  }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_12'/>
+12
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_12'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>  public static void shiftAndExato (String T, int n, String P, int m) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_13'/>
+13
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_13'>1</a>
+<span>
+1. shiftAndExato : Substituted 0 with 1 &rarr; SURVIVED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>    int R = 0;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_14'/>
+14
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_14'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    // @{\it Pr\&#39;e-processamento do padr\~ao}@</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_15'/>
+15
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_15'>1</a>
+<span>
+1. shiftAndExato : Substituted 256 with 257 &rarr; SURVIVED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>    int M[] = new int[maxChar];</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_16'/>
+16
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_16'>8</a>
+<span>
+1. shiftAndExato : Substituted 0 with 1 &rarr; SURVIVED<br/>
+2. shiftAndExato : Substituted 0 with 1 &rarr; SURVIVED<br/>
+3. shiftAndExato : negated conditional &rarr; SURVIVED<br/>
+4. shiftAndExato : removed conditional - replaced comparison check with false &rarr; SURVIVED<br/>
+5. shiftAndExato : changed conditional boundary &rarr; KILLED<br/>
+6. shiftAndExato : Changed increment from 1 to -1 &rarr; KILLED<br/>
+7. shiftAndExato : Substituted 256 with 257 &rarr; KILLED<br/>
+8. shiftAndExato : removed conditional - replaced comparison check with true &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>    for (int i = 0; i &#60; maxChar; i++) M[i] = 0;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_17'/>
+17
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_17'>6</a>
+<span>
+1. shiftAndExato : changed conditional boundary &rarr; KILLED<br/>
+2. shiftAndExato : Changed increment from 1 to -1 &rarr; KILLED<br/>
+3. shiftAndExato : Substituted 0 with 1 &rarr; KILLED<br/>
+4. shiftAndExato : negated conditional &rarr; KILLED<br/>
+5. shiftAndExato : removed conditional - replaced comparison check with false &rarr; KILLED<br/>
+6. shiftAndExato : removed conditional - replaced comparison check with true &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>    for (int j = 0; j &#60; m; j++) </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_18'/>
+18
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_18'>8</a>
+<span>
+1. shiftAndExato : Substituted 1 with 0 &rarr; SURVIVED<br/>
+2. shiftAndExato : Substituted 1 with 0 &rarr; SURVIVED<br/>
+3. shiftAndExato : Replaced integer subtraction with addition &rarr; SURVIVED<br/>
+4. shiftAndExato : Replaced integer subtraction with addition &rarr; SURVIVED<br/>
+5. shiftAndExato : Replaced Shift Left with Shift Right &rarr; SURVIVED<br/>
+6. shiftAndExato : Replaced bitwise OR with AND &rarr; SURVIVED<br/>
+7. shiftAndExato : removed call to java/lang/String::charAt &rarr; SURVIVED<br/>
+8. shiftAndExato : removed call to java/lang/String::charAt &rarr; SURVIVED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>      M[(int)P.charAt (j)] = M[(int)P.charAt (j)] | (1 &#60;&#60; (m - j - 1));</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_19'/>
+19
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_19'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    // @{\it Pesquisa}@</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_20'/>
+20
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_20'>6</a>
+<span>
+1. shiftAndExato : changed conditional boundary &rarr; KILLED<br/>
+2. shiftAndExato : Changed increment from 1 to -1 &rarr; KILLED<br/>
+3. shiftAndExato : Substituted 0 with 1 &rarr; KILLED<br/>
+4. shiftAndExato : negated conditional &rarr; KILLED<br/>
+5. shiftAndExato : removed conditional - replaced comparison check with false &rarr; KILLED<br/>
+6. shiftAndExato : removed conditional - replaced comparison check with true &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>    for (int i = 0; i &#60; n; i++) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_21'/>
+21
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_21'>9</a>
+<span>
+1. shiftAndExato : Substituted 1 with 0 &rarr; SURVIVED<br/>
+2. shiftAndExato : Substituted 1 with 0 &rarr; SURVIVED<br/>
+3. shiftAndExato : Substituted 1 with 0 &rarr; SURVIVED<br/>
+4. shiftAndExato : Replaced Shift Right with Shift Left &rarr; SURVIVED<br/>
+5. shiftAndExato : Replaced integer subtraction with addition &rarr; SURVIVED<br/>
+6. shiftAndExato : Replaced Shift Left with Shift Right &rarr; SURVIVED<br/>
+7. shiftAndExato : Replaced bitwise OR with AND &rarr; SURVIVED<br/>
+8. shiftAndExato : Replaced bitwise AND with OR &rarr; SURVIVED<br/>
+9. shiftAndExato : removed call to java/lang/String::charAt &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>      R = ((R &#62;&#62; 1) | (1 &#60;&#60; (m - 1))) &#38; M[(int)T.charAt (i)];</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_22'/>
+22
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_22'>5</a>
+<span>
+1. shiftAndExato : Substituted 1 with 0 &rarr; SURVIVED<br/>
+2. shiftAndExato : Replaced bitwise AND with OR &rarr; SURVIVED<br/>
+3. shiftAndExato : negated conditional &rarr; SURVIVED<br/>
+4. shiftAndExato : removed conditional - replaced equality check with false &rarr; SURVIVED<br/>
+5. shiftAndExato : removed conditional - replaced equality check with true &rarr; SURVIVED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>      if ((R &#38; 1) != 0) </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_23'/>
+23
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_23'>10</a>
+<span>
+1. shiftAndExato : Substituted 1 with 0 &rarr; SURVIVED<br/>
+2. shiftAndExato : Replaced integer subtraction with addition &rarr; SURVIVED<br/>
+3. shiftAndExato : Replaced integer addition with subtraction &rarr; SURVIVED<br/>
+4. shiftAndExato : removed call to java/lang/StringBuilder::toString &rarr; SURVIVED<br/>
+5. shiftAndExato : removed call to java/io/PrintStream::println &rarr; SURVIVED<br/>
+6. shiftAndExato : replaced call to java/lang/StringBuilder::append with receiver &rarr; SURVIVED<br/>
+7. shiftAndExato : replaced call to java/lang/StringBuilder::append with receiver &rarr; SURVIVED<br/>
+8. shiftAndExato : removed call to java/lang/StringBuilder::&#60;init&#62; &rarr; KILLED<br/>
+9. shiftAndExato : removed call to java/lang/StringBuilder::append &rarr; KILLED<br/>
+10. shiftAndExato : removed call to java/lang/StringBuilder::append &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        System.out.println (&#34;Casamento na posicao: &#34; + (i - m + 1));</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_24'/>
+24
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_24'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_25'/>
+25
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_25'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>  }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_26'/>
+26
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_26'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>  public static void bmh (String T, int n, String P, int m) {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_27'/>
+27
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_27'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    // @{\it Pr\&#39;e-processamento do padr\~ao}@</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_28'/>
+28
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_28'>1</a>
+<span>
+1. bmh : Substituted 256 with 257 &rarr; SURVIVED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>    int d[] = new int[maxChar];</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_29'/>
+29
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_29'>7</a>
+<span>
+1. bmh : Substituted 0 with 1 &rarr; SURVIVED<br/>
+2. bmh : negated conditional &rarr; TIMED_OUT<br/>
+3. bmh : removed conditional - replaced comparison check with false &rarr; TIMED_OUT<br/>
+4. bmh : changed conditional boundary &rarr; KILLED<br/>
+5. bmh : Changed increment from 1 to -1 &rarr; KILLED<br/>
+6. bmh : Substituted 256 with 257 &rarr; KILLED<br/>
+7. bmh : removed conditional - replaced comparison check with true &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>    for (int j = 0; j &#60; maxChar; j++) d[j] = m;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_30'/>
+30
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_30'>12</a>
+<span>
+1. bmh : Changed increment from 1 to -1 &rarr; SURVIVED<br/>
+2. bmh : Substituted 0 with 1 &rarr; SURVIVED<br/>
+3. bmh : Substituted 1 with 0 &rarr; SURVIVED<br/>
+4. bmh : Replaced integer subtraction with addition &rarr; SURVIVED<br/>
+5. bmh : Replaced integer subtraction with addition &rarr; SURVIVED<br/>
+6. bmh : changed conditional boundary &rarr; KILLED<br/>
+7. bmh : Substituted 1 with 0 &rarr; KILLED<br/>
+8. bmh : Replaced integer subtraction with addition &rarr; KILLED<br/>
+9. bmh : negated conditional &rarr; KILLED<br/>
+10. bmh : removed call to java/lang/String::charAt &rarr; KILLED<br/>
+11. bmh : removed conditional - replaced comparison check with false &rarr; KILLED<br/>
+12. bmh : removed conditional - replaced comparison check with true &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>    for (int j = 0; j &#60; (m-1); j++) d[(int)P.charAt (j)] = m - j - 1;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_31'/>
+31
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_31'>2</a>
+<span>
+1. bmh : Substituted 1 with 0 &rarr; KILLED<br/>
+2. bmh : Replaced integer subtraction with addition &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>    int i = m - 1;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_32'/>
+32
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_32'>4</a>
+<span>
+1. bmh : changed conditional boundary &rarr; KILLED<br/>
+2. bmh : negated conditional &rarr; KILLED<br/>
+3. bmh : removed conditional - replaced comparison check with false &rarr; KILLED<br/>
+4. bmh : removed conditional - replaced comparison check with true &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>    while (i &#60; n) { // @{\it Pesquisa}@</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_33'/>
+33
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_33'>2</a>
+<span>
+1. bmh : Substituted 1 with 0 &rarr; SURVIVED<br/>
+2. bmh : Replaced integer subtraction with addition &rarr; SURVIVED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>      int k = i; int j = m - 1;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_34'/>
+34
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_34'>13</a>
+<span>
+1. bmh : Changed increment from -1 to 1 &rarr; SURVIVED<br/>
+2. bmh : negated conditional &rarr; SURVIVED<br/>
+3. bmh : removed call to java/lang/String::charAt &rarr; SURVIVED<br/>
+4. bmh : removed conditional - replaced equality check with false &rarr; SURVIVED<br/>
+5. bmh : removed conditional - replaced equality check with true &rarr; SURVIVED<br/>
+6. bmh : Removed increment -1 &rarr; SURVIVED<br/>
+7. bmh : changed conditional boundary &rarr; KILLED<br/>
+8. bmh : Changed increment from -1 to 1 &rarr; KILLED<br/>
+9. bmh : negated conditional &rarr; KILLED<br/>
+10. bmh : removed call to java/lang/String::charAt &rarr; KILLED<br/>
+11. bmh : removed conditional - replaced comparison check with false &rarr; KILLED<br/>
+12. bmh : removed conditional - replaced comparison check with true &rarr; KILLED<br/>
+13. bmh : Removed increment -1 &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>      while ((j &#62;= 0) &#38;&#38; (T.charAt (k) == P.charAt (j))) { j--; k--; }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_35'/>
+35
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_35'>4</a>
+<span>
+1. bmh : changed conditional boundary &rarr; SURVIVED<br/>
+2. bmh : negated conditional &rarr; SURVIVED<br/>
+3. bmh : removed conditional - replaced comparison check with false &rarr; SURVIVED<br/>
+4. bmh : removed conditional - replaced comparison check with true &rarr; SURVIVED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>      if (j &#60; 0)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_36'/>
+36
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_36'>9</a>
+<span>
+1. bmh : Substituted 1 with 0 &rarr; SURVIVED<br/>
+2. bmh : Replaced integer addition with subtraction &rarr; SURVIVED<br/>
+3. bmh : removed call to java/lang/StringBuilder::toString &rarr; SURVIVED<br/>
+4. bmh : removed call to java/io/PrintStream::println &rarr; SURVIVED<br/>
+5. bmh : replaced call to java/lang/StringBuilder::append with receiver &rarr; SURVIVED<br/>
+6. bmh : replaced call to java/lang/StringBuilder::append with receiver &rarr; SURVIVED<br/>
+7. bmh : removed call to java/lang/StringBuilder::&#60;init&#62; &rarr; KILLED<br/>
+8. bmh : removed call to java/lang/StringBuilder::append &rarr; KILLED<br/>
+9. bmh : removed call to java/lang/StringBuilder::append &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        System.out.println (&#34;Casamento na posicao: &#34; + (k + 1));</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_37'/>
+37
+</td>
+<td class='uncertain'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_37'>2</a>
+<span>
+1. bmh : removed call to java/lang/String::charAt &rarr; TIMED_OUT<br/>
+2. bmh : Replaced integer addition with subtraction &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='uncertain'>      i = i + d[(int)T.charAt (i)];</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_38'/>
+38
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_38'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_39'/>
+39
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_39'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>  }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_40'/>
+40
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_40'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>  public static void bmhs (String T, int n, String P, int m) {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_41'/>
+41
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_41'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    // @{\it Pr\&#39;e-processamento do padr\~ao}@</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_42'/>
+42
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_42'>1</a>
+<span>
+1. bmhs : Substituted 256 with 257 &rarr; SURVIVED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>    int d[] = new int[maxChar];</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_43'/>
+43
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_43'>9</a>
+<span>
+1. bmhs : Substituted 0 with 1 &rarr; SURVIVED<br/>
+2. bmhs : Substituted 1 with 0 &rarr; TIMED_OUT<br/>
+3. bmhs : negated conditional &rarr; TIMED_OUT<br/>
+4. bmhs : removed conditional - replaced comparison check with false &rarr; TIMED_OUT<br/>
+5. bmhs : changed conditional boundary &rarr; KILLED<br/>
+6. bmhs : Changed increment from 1 to -1 &rarr; KILLED<br/>
+7. bmhs : Substituted 256 with 257 &rarr; KILLED<br/>
+8. bmhs : Replaced integer addition with subtraction &rarr; KILLED<br/>
+9. bmhs : removed conditional - replaced comparison check with true &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>    for (int j = 0; j &#60; maxChar; j++) d[j] = m + 1;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_44'/>
+44
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_44'>8</a>
+<span>
+1. bmhs : Replaced integer subtraction with addition &rarr; SURVIVED<br/>
+2. bmhs : changed conditional boundary &rarr; KILLED<br/>
+3. bmhs : Changed increment from 1 to -1 &rarr; KILLED<br/>
+4. bmhs : Substituted 0 with 1 &rarr; KILLED<br/>
+5. bmhs : negated conditional &rarr; KILLED<br/>
+6. bmhs : removed call to java/lang/String::charAt &rarr; KILLED<br/>
+7. bmhs : removed conditional - replaced comparison check with false &rarr; KILLED<br/>
+8. bmhs : removed conditional - replaced comparison check with true &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>    for (int j = 0; j &#60; m; j++) d[(int)P.charAt (j)] = m - j;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_45'/>
+45
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_45'>2</a>
+<span>
+1. bmhs : Substituted 1 with 0 &rarr; KILLED<br/>
+2. bmhs : Replaced integer subtraction with addition &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>    int i = m - 1;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_46'/>
+46
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_46'>4</a>
+<span>
+1. bmhs : changed conditional boundary &rarr; KILLED<br/>
+2. bmhs : negated conditional &rarr; KILLED<br/>
+3. bmhs : removed conditional - replaced comparison check with false &rarr; KILLED<br/>
+4. bmhs : removed conditional - replaced comparison check with true &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>    while (i &#60; n) { // @{\it Pesquisa}@</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_47'/>
+47
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_47'>2</a>
+<span>
+1. bmhs : Substituted 1 with 0 &rarr; KILLED<br/>
+2. bmhs : Replaced integer subtraction with addition &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>      int k = i; int j = m - 1;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_48'/>
+48
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_48'>13</a>
+<span>
+1. bmhs : Changed increment from -1 to 1 &rarr; SURVIVED<br/>
+2. bmhs : negated conditional &rarr; SURVIVED<br/>
+3. bmhs : removed call to java/lang/String::charAt &rarr; SURVIVED<br/>
+4. bmhs : removed conditional - replaced equality check with false &rarr; SURVIVED<br/>
+5. bmhs : removed conditional - replaced equality check with true &rarr; SURVIVED<br/>
+6. bmhs : Removed increment -1 &rarr; SURVIVED<br/>
+7. bmhs : changed conditional boundary &rarr; KILLED<br/>
+8. bmhs : Changed increment from -1 to 1 &rarr; KILLED<br/>
+9. bmhs : negated conditional &rarr; KILLED<br/>
+10. bmhs : removed call to java/lang/String::charAt &rarr; KILLED<br/>
+11. bmhs : removed conditional - replaced comparison check with false &rarr; KILLED<br/>
+12. bmhs : removed conditional - replaced comparison check with true &rarr; KILLED<br/>
+13. bmhs : Removed increment -1 &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>      while ((j &#62;= 0) &#38;&#38; (T.charAt (k) == P.charAt (j))) { j--; k--; }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_49'/>
+49
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_49'>4</a>
+<span>
+1. bmhs : changed conditional boundary &rarr; SURVIVED<br/>
+2. bmhs : negated conditional &rarr; SURVIVED<br/>
+3. bmhs : removed conditional - replaced comparison check with false &rarr; SURVIVED<br/>
+4. bmhs : removed conditional - replaced comparison check with true &rarr; SURVIVED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>      if (j &#60; 0)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_50'/>
+50
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_50'>9</a>
+<span>
+1. bmhs : Substituted 1 with 0 &rarr; SURVIVED<br/>
+2. bmhs : Replaced integer addition with subtraction &rarr; SURVIVED<br/>
+3. bmhs : removed call to java/lang/StringBuilder::toString &rarr; SURVIVED<br/>
+4. bmhs : removed call to java/io/PrintStream::println &rarr; SURVIVED<br/>
+5. bmhs : replaced call to java/lang/StringBuilder::append with receiver &rarr; SURVIVED<br/>
+6. bmhs : replaced call to java/lang/StringBuilder::append with receiver &rarr; SURVIVED<br/>
+7. bmhs : removed call to java/lang/StringBuilder::&#60;init&#62; &rarr; KILLED<br/>
+8. bmhs : removed call to java/lang/StringBuilder::append &rarr; KILLED<br/>
+9. bmhs : removed call to java/lang/StringBuilder::append &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        System.out.println (&#34;Casamento na posicao: &#34; + (k + 1));</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_51'/>
+51
+</td>
+<td class='uncertain'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_51'>10</a>
+<span>
+1. bmhs : Substituted 1 with 0 &rarr; TIMED_OUT<br/>
+2. bmhs : negated conditional &rarr; TIMED_OUT<br/>
+3. bmhs : removed call to java/lang/String::charAt &rarr; TIMED_OUT<br/>
+4. bmhs : Substituted 1 with 0 &rarr; KILLED<br/>
+5. bmhs : Substituted 1 with 0 &rarr; KILLED<br/>
+6. bmhs : Replaced integer subtraction with addition &rarr; KILLED<br/>
+7. bmhs : Replaced integer addition with subtraction &rarr; KILLED<br/>
+8. bmhs : Replaced integer addition with subtraction &rarr; KILLED<br/>
+9. bmhs : removed conditional - replaced equality check with false &rarr; KILLED<br/>
+10. bmhs : removed conditional - replaced equality check with true &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='uncertain'>      i += i != (n-1) ? d[(int)T.charAt (i+1)] : 1;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_52'/>
+52
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_52'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }    </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_53'/>
+53
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_53'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>  }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@78626f16_54'/>
+54
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_54'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@78626f16_6'>6</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_6'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>forcaBruta<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0942(ds.RandoopTest.Randoop1)</span></span> changed conditional boundary &rarr; KILLED</p> <p class='TIMED_OUT'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>forcaBruta<br/><b>Killed by : </b>none</span></span> Changed increment from 1 to -1 &rarr; TIMED_OUT</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>forcaBruta<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0976(ds.RandoopTest.Randoop1)</span></span> Substituted 0 with 1 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>forcaBruta<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0976(ds.RandoopTest.Randoop1)</span></span> Substituted 1 with 0 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>forcaBruta<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0783(ds.RandoopTest.Randoop1)</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>forcaBruta<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0976(ds.RandoopTest.Randoop1)</span></span> Replaced integer addition with subtraction &rarr; KILLED</p> <p class='KILLED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>forcaBruta<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0645(ds.RandoopTest.Randoop1)</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>forcaBruta<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0645(ds.RandoopTest.Randoop1)</span></span> removed conditional - replaced comparison check with false &rarr; KILLED</p> <p class='TIMED_OUT'><span class='pop'>9.<span><b>9</b><br/><b>Location : </b>forcaBruta<br/><b>Killed by : </b>none</span></span> removed conditional - replaced comparison check with true &rarr; TIMED_OUT</p> <p class='TIMED_OUT'><span class='pop'>10.<span><b>10</b><br/><b>Location : </b>forcaBruta<br/><b>Killed by : </b>none</span></span> Removed increment 1 &rarr; TIMED_OUT</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@78626f16_7'>7</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_7'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>forcaBruta<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0645(ds.RandoopTest.Randoop1)</span></span> Substituted 0 with 1 &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@78626f16_8'>8</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_8'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>forcaBruta<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0944(ds.RandoopTest.Randoop1)</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>forcaBruta<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0600(ds.RandoopTest.Randoop1)</span></span> Changed increment from 1 to -1 &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>forcaBruta<br/><b>Killed by : </b>none</span></span> Changed increment from 1 to -1 &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>forcaBruta<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0645(ds.RandoopTest.Randoop1)</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>forcaBruta<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0946(ds.RandoopTest.Randoop1)</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>forcaBruta<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0830(ds.RandoopTest.Randoop1)</span></span> removed call to java/lang/String::charAt &rarr; KILLED</p> <p class='KILLED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>forcaBruta<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0686(ds.RandoopTest.Randoop1)</span></span> removed call to java/lang/String::charAt &rarr; KILLED</p> <p class='KILLED'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>forcaBruta<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0946(ds.RandoopTest.Randoop1)</span></span> removed conditional - replaced equality check with false &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>9.<span><b>9</b><br/><b>Location : </b>forcaBruta<br/><b>Killed by : </b>none</span></span> removed conditional - replaced equality check with true &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>10.<span><b>10</b><br/><b>Location : </b>forcaBruta<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0645(ds.RandoopTest.Randoop1)</span></span> removed conditional - replaced comparison check with false &rarr; KILLED</p> <p class='KILLED'><span class='pop'>11.<span><b>11</b><br/><b>Location : </b>forcaBruta<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0727(ds.RandoopTest.Randoop1)</span></span> removed conditional - replaced comparison check with true &rarr; KILLED</p> <p class='KILLED'><span class='pop'>12.<span><b>12</b><br/><b>Location : </b>forcaBruta<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0946(ds.RandoopTest.Randoop1)</span></span> Removed increment 1 &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@78626f16_9'>9</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_9'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>forcaBruta<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0867(ds.RandoopTest.Randoop1)</span></span> removed call to java/lang/StringBuilder::&#60;init&#62; &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>forcaBruta<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>forcaBruta<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0867(ds.RandoopTest.Randoop1)</span></span> removed call to java/lang/StringBuilder::append &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>forcaBruta<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0867(ds.RandoopTest.Randoop1)</span></span> removed call to java/lang/StringBuilder::append &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>forcaBruta<br/><b>Killed by : </b>none</span></span> removed call to java/lang/StringBuilder::toString &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>forcaBruta<br/><b>Killed by : </b>none</span></span> removed conditional - replaced equality check with false &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>forcaBruta<br/><b>Killed by : </b>none</span></span> removed conditional - replaced equality check with true &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>forcaBruta<br/><b>Killed by : </b>none</span></span> removed call to java/io/PrintStream::println &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>9.<span><b>9</b><br/><b>Location : </b>forcaBruta<br/><b>Killed by : </b>none</span></span> replaced call to java/lang/StringBuilder::append with receiver &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>10.<span><b>10</b><br/><b>Location : </b>forcaBruta<br/><b>Killed by : </b>none</span></span> replaced call to java/lang/StringBuilder::append with receiver &rarr; SURVIVED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@78626f16_13'>13</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_13'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>none</span></span> Substituted 0 with 1 &rarr; SURVIVED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@78626f16_15'>15</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_15'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>none</span></span> Substituted 256 with 257 &rarr; SURVIVED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@78626f16_16'>16</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_16'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0590(ds.RandoopTest.Randoop1)</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0590(ds.RandoopTest.Randoop1)</span></span> Changed increment from 1 to -1 &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>none</span></span> Substituted 0 with 1 &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0590(ds.RandoopTest.Randoop1)</span></span> Substituted 256 with 257 &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>none</span></span> Substituted 0 with 1 &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>none</span></span> removed conditional - replaced comparison check with false &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0590(ds.RandoopTest.Randoop1)</span></span> removed conditional - replaced comparison check with true &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@78626f16_17'>17</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_17'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0616(ds.RandoopTest.Randoop1)</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0871(ds.RandoopTest.Randoop1)</span></span> Changed increment from 1 to -1 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0588(ds.RandoopTest.Randoop1)</span></span> Substituted 0 with 1 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0590(ds.RandoopTest.Randoop1)</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0590(ds.RandoopTest.Randoop1)</span></span> removed conditional - replaced comparison check with false &rarr; KILLED</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0755(ds.RandoopTest.Randoop1)</span></span> removed conditional - replaced comparison check with true &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@78626f16_18'>18</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_18'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>none</span></span> Substituted 1 with 0 &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>none</span></span> Substituted 1 with 0 &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>none</span></span> Replaced integer subtraction with addition &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>none</span></span> Replaced integer subtraction with addition &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>none</span></span> Replaced Shift Left with Shift Right &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>none</span></span> Replaced bitwise OR with AND &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>none</span></span> removed call to java/lang/String::charAt &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>none</span></span> removed call to java/lang/String::charAt &rarr; SURVIVED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@78626f16_20'>20</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_20'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0755(ds.RandoopTest.Randoop1)</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0809(ds.RandoopTest.Randoop1)</span></span> Changed increment from 1 to -1 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0977(ds.RandoopTest.Randoop1)</span></span> Substituted 0 with 1 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0728(ds.RandoopTest.Randoop1)</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0728(ds.RandoopTest.Randoop1)</span></span> removed conditional - replaced comparison check with false &rarr; KILLED</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0755(ds.RandoopTest.Randoop1)</span></span> removed conditional - replaced comparison check with true &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@78626f16_21'>21</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_21'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>none</span></span> Substituted 1 with 0 &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>none</span></span> Substituted 1 with 0 &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>none</span></span> Substituted 1 with 0 &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>none</span></span> Replaced Shift Right with Shift Left &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>none</span></span> Replaced integer subtraction with addition &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>none</span></span> Replaced Shift Left with Shift Right &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>none</span></span> Replaced bitwise OR with AND &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>none</span></span> Replaced bitwise AND with OR &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>9.<span><b>9</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0728(ds.RandoopTest.Randoop1)</span></span> removed call to java/lang/String::charAt &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@78626f16_22'>22</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_22'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>none</span></span> Substituted 1 with 0 &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>none</span></span> Replaced bitwise AND with OR &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>none</span></span> removed conditional - replaced equality check with false &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>none</span></span> removed conditional - replaced equality check with true &rarr; SURVIVED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@78626f16_23'>23</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_23'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0523(ds.RandoopTest.Randoop1)</span></span> removed call to java/lang/StringBuilder::&#60;init&#62; &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>none</span></span> Substituted 1 with 0 &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>none</span></span> Replaced integer subtraction with addition &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>none</span></span> Replaced integer addition with subtraction &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0523(ds.RandoopTest.Randoop1)</span></span> removed call to java/lang/StringBuilder::append &rarr; KILLED</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0523(ds.RandoopTest.Randoop1)</span></span> removed call to java/lang/StringBuilder::append &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>none</span></span> removed call to java/lang/StringBuilder::toString &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>none</span></span> removed call to java/io/PrintStream::println &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>9.<span><b>9</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>none</span></span> replaced call to java/lang/StringBuilder::append with receiver &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>10.<span><b>10</b><br/><b>Location : </b>shiftAndExato<br/><b>Killed by : </b>none</span></span> replaced call to java/lang/StringBuilder::append with receiver &rarr; SURVIVED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@78626f16_28'>28</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_28'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>none</span></span> Substituted 256 with 257 &rarr; SURVIVED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@78626f16_29'>29</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_29'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0612(ds.RandoopTest.Randoop1)</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0612(ds.RandoopTest.Randoop1)</span></span> Changed increment from 1 to -1 &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>none</span></span> Substituted 0 with 1 &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0612(ds.RandoopTest.Randoop1)</span></span> Substituted 256 with 257 &rarr; KILLED</p> <p class='TIMED_OUT'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; TIMED_OUT</p> <p class='TIMED_OUT'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>none</span></span> removed conditional - replaced comparison check with false &rarr; TIMED_OUT</p> <p class='KILLED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0612(ds.RandoopTest.Randoop1)</span></span> removed conditional - replaced comparison check with true &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@78626f16_30'>30</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_30'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0612(ds.RandoopTest.Randoop1)</span></span> changed conditional boundary &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>none</span></span> Changed increment from 1 to -1 &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>none</span></span> Substituted 0 with 1 &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0612(ds.RandoopTest.Randoop1)</span></span> Substituted 1 with 0 &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>none</span></span> Substituted 1 with 0 &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0612(ds.RandoopTest.Randoop1)</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>none</span></span> Replaced integer subtraction with addition &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>none</span></span> Replaced integer subtraction with addition &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>9.<span><b>9</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0612(ds.RandoopTest.Randoop1)</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>10.<span><b>10</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0723(ds.RandoopTest.Randoop1)</span></span> removed call to java/lang/String::charAt &rarr; KILLED</p> <p class='KILLED'><span class='pop'>11.<span><b>11</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0723(ds.RandoopTest.Randoop1)</span></span> removed conditional - replaced comparison check with false &rarr; KILLED</p> <p class='KILLED'><span class='pop'>12.<span><b>12</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0612(ds.RandoopTest.Randoop1)</span></span> removed conditional - replaced comparison check with true &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@78626f16_31'>31</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_31'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0729(ds.RandoopTest.Randoop1)</span></span> Substituted 1 with 0 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0729(ds.RandoopTest.Randoop1)</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@78626f16_32'>32</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_32'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0601(ds.RandoopTest.Randoop1)</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0612(ds.RandoopTest.Randoop1)</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0729(ds.RandoopTest.Randoop1)</span></span> removed conditional - replaced comparison check with false &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0612(ds.RandoopTest.Randoop1)</span></span> removed conditional - replaced comparison check with true &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@78626f16_33'>33</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_33'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>none</span></span> Substituted 1 with 0 &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>none</span></span> Replaced integer subtraction with addition &rarr; SURVIVED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@78626f16_34'>34</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_34'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0743(ds.RandoopTest.Randoop1)</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0580(ds.RandoopTest.Randoop1)</span></span> Changed increment from -1 to 1 &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>none</span></span> Changed increment from -1 to 1 &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0743(ds.RandoopTest.Randoop1)</span></span> negated conditional &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>none</span></span> removed call to java/lang/String::charAt &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0743(ds.RandoopTest.Randoop1)</span></span> removed call to java/lang/String::charAt &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>none</span></span> removed conditional - replaced equality check with false &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>9.<span><b>9</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>none</span></span> removed conditional - replaced equality check with true &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>10.<span><b>10</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0743(ds.RandoopTest.Randoop1)</span></span> removed conditional - replaced comparison check with false &rarr; KILLED</p> <p class='KILLED'><span class='pop'>11.<span><b>11</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0580(ds.RandoopTest.Randoop1)</span></span> removed conditional - replaced comparison check with true &rarr; KILLED</p> <p class='KILLED'><span class='pop'>12.<span><b>12</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0580(ds.RandoopTest.Randoop1)</span></span> Removed increment -1 &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>13.<span><b>13</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>none</span></span> Removed increment -1 &rarr; SURVIVED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@78626f16_35'>35</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_35'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>none</span></span> removed conditional - replaced comparison check with false &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>none</span></span> removed conditional - replaced comparison check with true &rarr; SURVIVED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@78626f16_36'>36</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_36'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0729(ds.RandoopTest.Randoop1)</span></span> removed call to java/lang/StringBuilder::&#60;init&#62; &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>none</span></span> Substituted 1 with 0 &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>none</span></span> Replaced integer addition with subtraction &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0729(ds.RandoopTest.Randoop1)</span></span> removed call to java/lang/StringBuilder::append &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0729(ds.RandoopTest.Randoop1)</span></span> removed call to java/lang/StringBuilder::append &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>none</span></span> removed call to java/lang/StringBuilder::toString &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>none</span></span> removed call to java/io/PrintStream::println &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>none</span></span> replaced call to java/lang/StringBuilder::append with receiver &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>9.<span><b>9</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>none</span></span> replaced call to java/lang/StringBuilder::append with receiver &rarr; SURVIVED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@78626f16_37'>37</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_37'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0580(ds.RandoopTest.Randoop1)</span></span> Replaced integer addition with subtraction &rarr; KILLED</p> <p class='TIMED_OUT'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>bmh<br/><b>Killed by : </b>none</span></span> removed call to java/lang/String::charAt &rarr; TIMED_OUT</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@78626f16_42'>42</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_42'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>none</span></span> Substituted 256 with 257 &rarr; SURVIVED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@78626f16_43'>43</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_43'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0726(ds.RandoopTest.Randoop1)</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0726(ds.RandoopTest.Randoop1)</span></span> Changed increment from 1 to -1 &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>none</span></span> Substituted 0 with 1 &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0726(ds.RandoopTest.Randoop1)</span></span> Substituted 256 with 257 &rarr; KILLED</p> <p class='TIMED_OUT'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>none</span></span> Substituted 1 with 0 &rarr; TIMED_OUT</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0916(ds.RandoopTest.Randoop1)</span></span> Replaced integer addition with subtraction &rarr; KILLED</p> <p class='TIMED_OUT'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; TIMED_OUT</p> <p class='TIMED_OUT'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>none</span></span> removed conditional - replaced comparison check with false &rarr; TIMED_OUT</p> <p class='KILLED'><span class='pop'>9.<span><b>9</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0726(ds.RandoopTest.Randoop1)</span></span> removed conditional - replaced comparison check with true &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@78626f16_44'>44</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_44'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0916(ds.RandoopTest.Randoop1)</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0878(ds.RandoopTest.Randoop1)</span></span> Changed increment from 1 to -1 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0846(ds.RandoopTest.Randoop1)</span></span> Substituted 0 with 1 &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>none</span></span> Replaced integer subtraction with addition &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0726(ds.RandoopTest.Randoop1)</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0726(ds.RandoopTest.Randoop1)</span></span> removed call to java/lang/String::charAt &rarr; KILLED</p> <p class='KILLED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0726(ds.RandoopTest.Randoop1)</span></span> removed conditional - replaced comparison check with false &rarr; KILLED</p> <p class='KILLED'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0878(ds.RandoopTest.Randoop1)</span></span> removed conditional - replaced comparison check with true &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@78626f16_45'>45</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_45'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0644(ds.RandoopTest.Randoop1)</span></span> Substituted 1 with 0 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0644(ds.RandoopTest.Randoop1)</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@78626f16_46'>46</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_46'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0878(ds.RandoopTest.Randoop1)</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0644(ds.RandoopTest.Randoop1)</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0644(ds.RandoopTest.Randoop1)</span></span> removed conditional - replaced comparison check with false &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0878(ds.RandoopTest.Randoop1)</span></span> removed conditional - replaced comparison check with true &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@78626f16_47'>47</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_47'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0914(ds.RandoopTest.Randoop1)</span></span> Substituted 1 with 0 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0914(ds.RandoopTest.Randoop1)</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@78626f16_48'>48</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_48'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0935(ds.RandoopTest.Randoop1)</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0799(ds.RandoopTest.Randoop1)</span></span> Changed increment from -1 to 1 &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>none</span></span> Changed increment from -1 to 1 &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0914(ds.RandoopTest.Randoop1)</span></span> negated conditional &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0935(ds.RandoopTest.Randoop1)</span></span> removed call to java/lang/String::charAt &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>none</span></span> removed call to java/lang/String::charAt &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>none</span></span> removed conditional - replaced equality check with false &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>9.<span><b>9</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>none</span></span> removed conditional - replaced equality check with true &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>10.<span><b>10</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0935(ds.RandoopTest.Randoop1)</span></span> removed conditional - replaced comparison check with false &rarr; KILLED</p> <p class='KILLED'><span class='pop'>11.<span><b>11</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0914(ds.RandoopTest.Randoop1)</span></span> removed conditional - replaced comparison check with true &rarr; KILLED</p> <p class='KILLED'><span class='pop'>12.<span><b>12</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0799(ds.RandoopTest.Randoop1)</span></span> Removed increment -1 &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>13.<span><b>13</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>none</span></span> Removed increment -1 &rarr; SURVIVED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@78626f16_49'>49</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_49'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>none</span></span> removed conditional - replaced comparison check with false &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>none</span></span> removed conditional - replaced comparison check with true &rarr; SURVIVED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@78626f16_50'>50</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_50'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0644(ds.RandoopTest.Randoop1)</span></span> removed call to java/lang/StringBuilder::&#60;init&#62; &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>none</span></span> Substituted 1 with 0 &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>none</span></span> Replaced integer addition with subtraction &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0644(ds.RandoopTest.Randoop1)</span></span> removed call to java/lang/StringBuilder::append &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0644(ds.RandoopTest.Randoop1)</span></span> removed call to java/lang/StringBuilder::append &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>none</span></span> removed call to java/lang/StringBuilder::toString &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>none</span></span> removed call to java/io/PrintStream::println &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>none</span></span> replaced call to java/lang/StringBuilder::append with receiver &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>9.<span><b>9</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>none</span></span> replaced call to java/lang/StringBuilder::append with receiver &rarr; SURVIVED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@78626f16_51'>51</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@78626f16_51'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0614(ds.RandoopTest.Randoop1)</span></span> Substituted 1 with 0 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0916(ds.RandoopTest.Randoop1)</span></span> Substituted 1 with 0 &rarr; KILLED</p> <p class='TIMED_OUT'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>none</span></span> Substituted 1 with 0 &rarr; TIMED_OUT</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0614(ds.RandoopTest.Randoop1)</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0916(ds.RandoopTest.Randoop1)</span></span> Replaced integer addition with subtraction &rarr; KILLED</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0914(ds.RandoopTest.Randoop1)</span></span> Replaced integer addition with subtraction &rarr; KILLED</p> <p class='TIMED_OUT'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; TIMED_OUT</p> <p class='TIMED_OUT'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>none</span></span> removed call to java/lang/String::charAt &rarr; TIMED_OUT</p> <p class='KILLED'><span class='pop'>9.<span><b>9</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0644(ds.RandoopTest.Randoop1)</span></span> removed conditional - replaced equality check with false &rarr; KILLED</p> <p class='KILLED'><span class='pop'>10.<span><b>10</b><br/><b>Location : </b>bmhs<br/><b>Killed by : </b>ds.RandoopTest.Randoop1.test0614(ds.RandoopTest.Randoop1)</span></span> removed conditional - replaced equality check with true &rarr; KILLED</p> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+<li class='mutator'>RETURN_VALS_MUTATOR</li>
+<li class='mutator'>BOOLEAN_TRUE_RETURN</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_61</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_60</li>
+<li class='mutator'>CONDITIONALS_BOUNDARY_MUTATOR</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_56</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_55</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_58</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_57</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_52</li>
+<li class='mutator'>VOID_METHOD_CALL_MUTATOR</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_51</li>
+<li class='mutator'>NULL_RETURN_VALUES</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_54</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_53</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_59</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_50</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_45</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_44</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_47</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_46</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_41</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_40</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_43</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_42</li>
+<li class='mutator'>NEGATE_CONDITIONALS_MUTATOR</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_49</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_48</li>
+<li class='mutator'>INLINE_CONSTANT_MUTATOR</li>
+<li class='mutator'>CONSTRUCTOR_CALL_MUTATOR</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_34</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_33</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_36</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_35</li>
+<li class='mutator'>EXPERIMENTAL_MEMBER_VARIABLE_MUTATOR</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_30</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_32</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_31</li>
+<li class='mutator'>REMOVE_CONDITIONALS_ORDER_ELSE_MUTATOR</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_38</li>
+<li class='mutator'>BOOLEAN_FALSE_RETURN</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_37</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_39</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_3</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_2</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_1</li>
+<li class='mutator'>INVERT_NEGS_MUTATOR</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_0</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_23</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_22</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_25</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_9</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_24</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_8</li>
+<li class='mutator'>EMPTY_RETURN_VALUES</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_7</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_6</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_21</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_5</li>
+<li class='mutator'>NAKED_RECEIVER</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_20</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_4</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_27</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_26</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_29</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_28</li>
+<li class='mutator'>PRIMITIVE_RETURN_VALS_MUTATOR</li>
+<li class='mutator'>REMOVE_INCREMENTS_MUTATOR</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_12</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_11</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_99</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_14</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_13</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_96</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_95</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_10</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_98</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_97</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_19</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_16</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_15</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_18</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_17</li>
+<li class='mutator'>EXPERIMENTAL_SWITCH_MUTATOR</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_92</li>
+<li class='mutator'>ARGUMENT_PROPAGATION_MUTATOR</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_91</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_94</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_93</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_90</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_89</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_88</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_85</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_84</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_87</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_86</li>
+<li class='mutator'>MATH_MUTATOR</li>
+<li class='mutator'>NON_VOID_METHOD_CALL_MUTATOR</li>
+<li class='mutator'>REMOVE_CONDITIONALS_EQUAL_IF_MUTATOR</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_81</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_80</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_83</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_82</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_78</li>
+<li class='mutator'>REMOVE_CONDITIONALS_EQUAL_ELSE_MUTATOR</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_77</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_79</li>
+<li class='mutator'>INCREMENTS_MUTATOR</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_74</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_73</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_76</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_75</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_70</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_72</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_71</li>
+<li class='mutator'>REMOVE_CONDITIONALS_ORDER_IF_MUTATOR</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_67</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_66</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_69</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_68</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_63</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_62</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_65</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_64</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>ds.RandoopTest.Randoop1.test0687(ds.RandoopTest.Randoop1) (7 ms)</li><li>ds.RandoopTest.Randoop1.test0590(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0911(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0565(ds.RandoopTest.Randoop1) (20 ms)</li><li>ds.RandoopTest.Randoop1.test0883(ds.RandoopTest.Randoop1) (5 ms)</li><li>ds.RandoopTest.Randoop1.test0981(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0715(ds.RandoopTest.Randoop1) (21 ms)</li><li>ds.RandoopTest.Randoop1.test0785(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0813(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0589(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0617(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0541(ds.RandoopTest.Randoop1) (7 ms)</li><li>ds.RandoopTest.Randoop1.test0663(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0761(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0614(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0544(ds.RandoopTest.Randoop1) (6 ms)</li><li>ds.RandoopTest.Randoop1.test0834(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0810(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0568(ds.RandoopTest.Randoop1) (14 ms)</li><li>ds.RandoopTest.Randoop1.test0984(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0740(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0638(ds.RandoopTest.Randoop1) (18 ms)</li><li>ds.RandoopTest.Randoop1.test0907(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0764(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0858(ds.RandoopTest.Randoop1) (6 ms)</li><li>ds.RandoopTest.Randoop1.test0960(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0684(ds.RandoopTest.Randoop1) (5 ms)</li><li>ds.RandoopTest.Randoop1.test0837(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0520(ds.RandoopTest.Randoop1) (33 ms)</li><li>ds.RandoopTest.Randoop1.test0880(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0660(ds.RandoopTest.Randoop1) (17 ms)</li><li>ds.RandoopTest.Randoop1.test0938(ds.RandoopTest.Randoop1) (15 ms)</li><li>ds.RandoopTest.Randoop1.test0537(ds.RandoopTest.Randoop1) (6 ms)</li><li>ds.RandoopTest.Randoop1.test0953(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0855(ds.RandoopTest.Randoop1) (14 ms)</li><li>ds.RandoopTest.Randoop1.test0879(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0977(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0841(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0523(ds.RandoopTest.Randoop1) (8 ms)</li><li>ds.RandoopTest.Randoop1.test0691(ds.RandoopTest.Randoop1) (14 ms)</li><li>ds.RandoopTest.Randoop1.test0788(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0914(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0513(ds.RandoopTest.Randoop1) (7 ms)</li><li>ds.RandoopTest.Randoop1.test0831(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0862(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0932(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0959(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0792(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0516(ds.RandoopTest.Randoop1) (12 ms)</li><li>ds.RandoopTest.Randoop1.test0886(ds.RandoopTest.Randoop1) (15 ms)</li><li>ds.RandoopTest.Randoop1.test0502(ds.RandoopTest.Randoop1) (12 ms)</li><li>ds.RandoopTest.Randoop1.test0956(ds.RandoopTest.Randoop1) (5 ms)</li><li>ds.RandoopTest.Randoop1.test0519(ds.RandoopTest.Randoop1) (6 ms)</li><li>ds.RandoopTest.Randoop1.test0852(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0935(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0865(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0782(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0889(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0876(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0925(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0607(ds.RandoopTest.Randoop1) (6 ms)</li><li>ds.RandoopTest.Randoop1.test0551(ds.RandoopTest.Randoop1) (5 ms)</li><li>ds.RandoopTest.Randoop1.test0771(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0579(ds.RandoopTest.Randoop1) (5 ms)</li><li>ds.RandoopTest.Randoop1.test0942(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0775(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0677(ds.RandoopTest.Randoop1) (8 ms)</li><li>ds.RandoopTest.Randoop1.test0949(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0729(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0803(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0901(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0705(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0827(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0966(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0799(ds.RandoopTest.Randoop1) (16 ms)</li><li>ds.RandoopTest.Randoop1.test0998(ds.RandoopTest.Randoop1) (5 ms)</li><li>ds.RandoopTest.Randoop1.test0531(ds.RandoopTest.Randoop1) (8 ms)</li><li>ds.RandoopTest.Randoop1.test0627(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0681(ds.RandoopTest.Randoop1) (5 ms)</li><li>ds.RandoopTest.Randoop1.test0890(ds.RandoopTest.Randoop1) (7 ms)</li><li>ds.RandoopTest.Randoop1.test0751(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0847(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0555(ds.RandoopTest.Randoop1) (6 ms)</li><li>ds.RandoopTest.Randoop1.test0767(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0547(ds.RandoopTest.Randoop1) (6 ms)</li><li>ds.RandoopTest.Randoop1.test0673(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0974(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0603(ds.RandoopTest.Randoop1) (11 ms)</li><li>ds.RandoopTest.Randoop1.test0950(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0823(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0697(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0917(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0659(ds.RandoopTest.Randoop1) (19 ms)</li><li>ds.RandoopTest.Randoop1.test0992(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0757(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0743(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0645(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0593(ds.RandoopTest.Randoop1) (19 ms)</li><li>ds.RandoopTest.Randoop1.test0621(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0611(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0747(ds.RandoopTest.Randoop1) (5 ms)</li><li>ds.RandoopTest.Randoop1.test0649(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0994(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0733(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0635(ds.RandoopTest.Randoop1) (16 ms)</li><li>ds.RandoopTest.Randoop1.test0583(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0970(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0655(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0749(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0653(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0723(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0809(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0739(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0679(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0597(ds.RandoopTest.Randoop1) (7 ms)</li><li>ds.RandoopTest.Randoop1.test0631(ds.RandoopTest.Randoop1) (5 ms)</li><li>ds.RandoopTest.Randoop1.test0805(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0701(ds.RandoopTest.Randoop1) (23 ms)</li><li>ds.RandoopTest.Randoop1.test0669(ds.RandoopTest.Randoop1) (5 ms)</li><li>ds.RandoopTest.Randoop1.test0573(ds.RandoopTest.Randoop1) (5 ms)</li><li>ds.RandoopTest.Randoop1.test0819(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0575(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0725(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0599(ds.RandoopTest.Randoop1) (5 ms)</li><li>ds.RandoopTest.Randoop1.test0842(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0634(ds.RandoopTest.Randoop1) (17 ms)</li><li>ds.RandoopTest.Randoop1.test0830(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0622(ds.RandoopTest.Randoop1) (10 ms)</li><li>ds.RandoopTest.Randoop1.test0829(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0866(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0854(ds.RandoopTest.Randoop1) (31 ms)</li><li>ds.RandoopTest.Randoop1.test0646(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0719(ds.RandoopTest.Randoop1) (5 ms)</li><li>ds.RandoopTest.Randoop1.test0817(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0658(ds.RandoopTest.Randoop1) (19 ms)</li><li>ds.RandoopTest.Randoop1.test0594(ds.RandoopTest.Randoop1) (14 ms)</li><li>ds.RandoopTest.Randoop1.test0790(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0610(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0582(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0570(ds.RandoopTest.Randoop1) (5 ms)</li><li>ds.RandoopTest.Randoop1.test0985(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0777(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0973(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0906(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0765(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0918(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0833(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0789(ds.RandoopTest.Randoop1) (5 ms)</li><li>ds.RandoopTest.Randoop1.test0821(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0997(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0707(ds.RandoopTest.Randoop1) (5 ms)</li><li>ds.RandoopTest.Randoop1.test0741(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0961(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0753(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0882(ds.RandoopTest.Randoop1) (7 ms)</li><li>ds.RandoopTest.Randoop1.test0894(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0606(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0798(ds.RandoopTest.Randoop1) (16 ms)</li><li>ds.RandoopTest.Randoop1.test0870(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0539(ds.RandoopTest.Randoop1) (8 ms)</li><li>ds.RandoopTest.Randoop1.test0845(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0774(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0857(ds.RandoopTest.Randoop1) (14 ms)</li><li>ds.RandoopTest.Randoop1.test0618(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0869(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0786(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0750(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0762(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0958(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0945(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0503(ds.RandoopTest.Randoop1) (14 ms)</li><li>ds.RandoopTest.Randoop1.test0861(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0957(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0515(ds.RandoopTest.Randoop1) (58 ms)</li><li>ds.RandoopTest.Randoop1.test0793(ds.RandoopTest.Randoop1) (5 ms)</li><li>ds.RandoopTest.Randoop1.test0969(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0527(ds.RandoopTest.Randoop1) (89 ms)</li><li>ds.RandoopTest.Randoop1.test0878(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0506(ds.RandoopTest.Randoop1) (12 ms)</li><li>ds.RandoopTest.Randoop1.test0781(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0910(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0518(ds.RandoopTest.Randoop1) (8 ms)</li><li>ds.RandoopTest.Randoop1.test0922(ds.RandoopTest.Randoop1) (14 ms)</li><li>ds.RandoopTest.Randoop1.test0934(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0933(ds.RandoopTest.Randoop1) (5 ms)</li><li>ds.RandoopTest.Randoop1.test0946(ds.RandoopTest.Randoop1) (10 ms)</li><li>ds.RandoopTest.Randoop1.test0921(ds.RandoopTest.Randoop1) (14 ms)</li><li>ds.RandoopTest.Randoop1.test0510(ds.RandoopTest.Randoop1) (14 ms)</li><li>ds.RandoopTest.Randoop1.test0690(ds.RandoopTest.Randoop1) (7 ms)</li><li>ds.RandoopTest.Randoop1.test0885(ds.RandoopTest.Randoop1) (15 ms)</li><li>ds.RandoopTest.Randoop1.test0734(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0526(ds.RandoopTest.Randoop1) (12 ms)</li><li>ds.RandoopTest.Randoop1.test0514(ds.RandoopTest.Randoop1) (7 ms)</li><li>ds.RandoopTest.Randoop1.test0722(ds.RandoopTest.Randoop1) (20 ms)</li><li>ds.RandoopTest.Randoop1.test0746(ds.RandoopTest.Randoop1) (5 ms)</li><li>ds.RandoopTest.Randoop1.test0873(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0538(ds.RandoopTest.Randoop1) (7 ms)</li><li>ds.RandoopTest.Randoop1.test0758(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0897(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0694(ds.RandoopTest.Randoop1) (5 ms)</li><li>ds.RandoopTest.Randoop1.test0682(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0778(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0530(ds.RandoopTest.Randoop1) (19 ms)</li><li>ds.RandoopTest.Randoop1.test0670(ds.RandoopTest.Randoop1) (7 ms)</li><li>ds.RandoopTest.Randoop1.test0534(ds.RandoopTest.Randoop1) (45 ms)</li><li>ds.RandoopTest.Randoop1.test0742(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0698(ds.RandoopTest.Randoop1) (5 ms)</li><li>ds.RandoopTest.Randoop1.test0522(ds.RandoopTest.Randoop1) (8 ms)</li><li>ds.RandoopTest.Randoop1.test0730(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0766(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0881(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0546(ds.RandoopTest.Randoop1) (6 ms)</li><li>ds.RandoopTest.Randoop1.test0893(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0754(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0558(ds.RandoopTest.Randoop1) (8 ms)</li><li>ds.RandoopTest.Randoop1.test0674(ds.RandoopTest.Randoop1) (5 ms)</li><li>ds.RandoopTest.Randoop1.test0802(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0814(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0686(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0718(ds.RandoopTest.Randoop1) (39 ms)</li><li>ds.RandoopTest.Randoop1.test0826(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0706(ds.RandoopTest.Randoop1) (5 ms)</li><li>ds.RandoopTest.Randoop1.test0650(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0662(ds.RandoopTest.Randoop1) (20 ms)</li><li>ds.RandoopTest.Randoop1.test0838(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0578(ds.RandoopTest.Randoop1) (5 ms)</li><li>ds.RandoopTest.Randoop1.test0542(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0566(ds.RandoopTest.Randoop1) (18 ms)</li><li>ds.RandoopTest.Randoop1.test0554(ds.RandoopTest.Randoop1) (6 ms)</li><li>ds.RandoopTest.Randoop1.test0654(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0598(ds.RandoopTest.Randoop1) (10 ms)</li><li>ds.RandoopTest.Randoop1.test0710(ds.RandoopTest.Randoop1) (5 ms)</li><li>ds.RandoopTest.Randoop1.test0630(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0678(ds.RandoopTest.Randoop1) (5 ms)</li><li>ds.RandoopTest.Randoop1.test0642(ds.RandoopTest.Randoop1) (6 ms)</li><li>ds.RandoopTest.Randoop1.test0666(ds.RandoopTest.Randoop1) (5 ms)</li><li>ds.RandoopTest.Randoop1.test0574(ds.RandoopTest.Randoop1) (5 ms)</li><li>ds.RandoopTest.Randoop1.test0702(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0586(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0714(ds.RandoopTest.Randoop1) (36 ms)</li><li>ds.RandoopTest.Randoop1.test0818(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0726(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0806(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0738(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0550(ds.RandoopTest.Randoop1) (7 ms)</li><li>ds.RandoopTest.Randoop1.test0562(ds.RandoopTest.Randoop1) (21 ms)</li><li>ds.RandoopTest.Randoop1.test0577(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0773(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0703(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0605(ds.RandoopTest.Randoop1) (11 ms)</li><li>ds.RandoopTest.Randoop1.test0801(ds.RandoopTest.Randoop1) (16 ms)</li><li>ds.RandoopTest.Randoop1.test0675(ds.RandoopTest.Randoop1) (5 ms)</li><li>ds.RandoopTest.Randoop1.test0923(ds.RandoopTest.Randoop1) (14 ms)</li><li>ds.RandoopTest.Randoop1.test0993(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0699(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0507(ds.RandoopTest.Randoop1) (17 ms)</li><li>ds.RandoopTest.Randoop1.test0825(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0895(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0797(ds.RandoopTest.Randoop1) (18 ms)</li><li>ds.RandoopTest.Randoop1.test0968(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0651(ds.RandoopTest.Randoop1) (10 ms)</li><li>ds.RandoopTest.Randoop1.test0553(ds.RandoopTest.Randoop1) (5 ms)</li><li>ds.RandoopTest.Randoop1.test0871(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0972(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0626(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0822(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0849(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0846(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0532(ds.RandoopTest.Randoop1) (44 ms)</li><li>ds.RandoopTest.Randoop1.test0776(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0629(ds.RandoopTest.Randoop1) (8 ms)</li><li>ds.RandoopTest.Randoop1.test0752(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0919(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0556(ds.RandoopTest.Randoop1) (6 ms)</li><li>ds.RandoopTest.Randoop1.test0892(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0696(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0602(ds.RandoopTest.Randoop1) (5 ms)</li><li>ds.RandoopTest.Randoop1.test0672(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0965(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0511(ds.RandoopTest.Randoop1) (17 ms)</li><li>ds.RandoopTest.Randoop1.test0867(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0926(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0549(ds.RandoopTest.Randoop1) (5 ms)</li><li>ds.RandoopTest.Randoop1.test0535(ds.RandoopTest.Randoop1) (10 ms)</li><li>ds.RandoopTest.Randoop1.test0608(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0951(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0989(ds.RandoopTest.Randoop1) (5 ms)</li><li>ds.RandoopTest.Randoop1.test0902(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0501(ds.RandoopTest.Randoop1) (400 ms)</li><li>ds.RandoopTest.Randoop1.test0898(ds.RandoopTest.Randoop1) (6 ms)</li><li>ds.RandoopTest.Randoop1.test0525(ds.RandoopTest.Randoop1) (22 ms)</li><li>ds.RandoopTest.Randoop1.test0843(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0941(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0791(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0693(ds.RandoopTest.Randoop1) (16 ms)</li><li>ds.RandoopTest.Randoop1.test0504(ds.RandoopTest.Randoop1) (13 ms)</li><li>ds.RandoopTest.Randoop1.test0888(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0920(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0528(ds.RandoopTest.Randoop1) (10 ms)</li><li>ds.RandoopTest.Randoop1.test0944(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0780(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0874(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0850(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0877(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0947(ds.RandoopTest.Randoop1) (14 ms)</li><li>ds.RandoopTest.Randoop1.test0794(ds.RandoopTest.Randoop1) (16 ms)</li><li>ds.RandoopTest.Randoop1.test0853(ds.RandoopTest.Randoop1) (18 ms)</li><li>ds.RandoopTest.Randoop1.test0770(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0840(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0864(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0978(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0563(ds.RandoopTest.Randoop1) (20 ms)</li><li>ds.RandoopTest.Randoop1.test0661(ds.RandoopTest.Randoop1) (17 ms)</li><li>ds.RandoopTest.Randoop1.test0787(ds.RandoopTest.Randoop1) (5 ms)</li><li>ds.RandoopTest.Randoop1.test0930(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0567(ds.RandoopTest.Randoop1) (21 ms)</li><li>ds.RandoopTest.Randoop1.test0665(ds.RandoopTest.Randoop1) (5 ms)</li><li>ds.RandoopTest.Randoop1.test0839(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0763(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0937(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0689(ds.RandoopTest.Randoop1) (5 ms)</li><li>ds.RandoopTest.Randoop1.test0913(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0619(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0815(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0954(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0717(ds.RandoopTest.Randoop1) (21 ms)</li><li>ds.RandoopTest.Randoop1.test0905(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0835(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0543(ds.RandoopTest.Randoop1) (5 ms)</li><li>ds.RandoopTest.Randoop1.test0639(ds.RandoopTest.Randoop1) (19 ms)</li><li>ds.RandoopTest.Randoop1.test0986(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0859(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0559(ds.RandoopTest.Randoop1) (45 ms)</li><li>ds.RandoopTest.Randoop1.test0755(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0929(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0779(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0709(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0685(ds.RandoopTest.Randoop1) (32 ms)</li><li>ds.RandoopTest.Randoop1.test0811(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0962(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0615(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0591(ds.RandoopTest.Randoop1) (6 ms)</li><li>ds.RandoopTest.Randoop1.test0647(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0980(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0745(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0769(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0633(ds.RandoopTest.Randoop1) (14 ms)</li><li>ds.RandoopTest.Randoop1.test0731(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0982(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0581(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0637(ds.RandoopTest.Randoop1) (16 ms)</li><li>ds.RandoopTest.Randoop1.test0759(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0996(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0623(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0909(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0721(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0595(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0571(ds.RandoopTest.Randoop1) (5 ms)</li><li>ds.RandoopTest.Randoop1.test0667(ds.RandoopTest.Randoop1) (7 ms)</li><li>ds.RandoopTest.Randoop1.test0737(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0641(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0585(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0735(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0711(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0727(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0990(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0561(ds.RandoopTest.Randoop1) (20 ms)</li><li>ds.RandoopTest.Randoop1.test0657(ds.RandoopTest.Randoop1) (13 ms)</li><li>ds.RandoopTest.Randoop1.test0713(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0643(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0807(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0587(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0744(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0940(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0536(ds.RandoopTest.Randoop1) (5 ms)</li><li>ds.RandoopTest.Randoop1.test0732(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0524(ds.RandoopTest.Randoop1) (83 ms)</li><li>ds.RandoopTest.Randoop1.test0720(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0548(ds.RandoopTest.Randoop1) (8 ms)</li><li>ds.RandoopTest.Randoop1.test0939(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0976(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0768(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0927(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0609(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0952(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0964(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0756(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0692(ds.RandoopTest.Randoop1) (6 ms)</li><li>ds.RandoopTest.Randoop1.test0512(ds.RandoopTest.Randoop1) (18 ms)</li><li>ds.RandoopTest.Randoop1.test0680(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0569(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0601(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0557(ds.RandoopTest.Randoop1) (5 ms)</li><li>ds.RandoopTest.Randoop1.test0683(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0903(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0625(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0613(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0891(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0695(ds.RandoopTest.Randoop1) (5 ms)</li><li>ds.RandoopTest.Randoop1.test0915(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0988(ds.RandoopTest.Randoop1) (9 ms)</li><li>ds.RandoopTest.Randoop1.test0671(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0545(ds.RandoopTest.Randoop1) (8 ms)</li><li>ds.RandoopTest.Randoop1.test0533(ds.RandoopTest.Randoop1) (12 ms)</li><li>ds.RandoopTest.Randoop1.test0521(ds.RandoopTest.Randoop1) (11 ms)</li><li>ds.RandoopTest.Randoop1.test0912(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0772(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0784(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0900(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0924(ds.RandoopTest.Randoop1) (15 ms)</li><li>ds.RandoopTest.Randoop1.test0796(ds.RandoopTest.Randoop1) (18 ms)</li><li>ds.RandoopTest.Randoop1.test0896(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0936(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0760(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0872(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0948(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0884(ds.RandoopTest.Randoop1) (16 ms)</li><li>ds.RandoopTest.Randoop1.test0943(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0967(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0955(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0508(ds.RandoopTest.Randoop1) (9 ms)</li><li>ds.RandoopTest.Randoop1.test0979(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0860(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0529(ds.RandoopTest.Randoop1) (5 ms)</li><li>ds.RandoopTest.Randoop1.test0875(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0863(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0899(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0931(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0887(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0851(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0505(ds.RandoopTest.Randoop1) (12 ms)</li><li>ds.RandoopTest.Randoop1.test0783(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test1000(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0795(ds.RandoopTest.Randoop1) (15 ms)</li><li>ds.RandoopTest.Randoop1.test0517(ds.RandoopTest.Randoop1) (32 ms)</li><li>ds.RandoopTest.Randoop1.test0509(ds.RandoopTest.Randoop1) (9 ms)</li><li>ds.RandoopTest.Randoop1.test0868(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0592(ds.RandoopTest.Randoop1) (6 ms)</li><li>ds.RandoopTest.Randoop1.test0620(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0580(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0624(ds.RandoopTest.Randoop1) (5 ms)</li><li>ds.RandoopTest.Randoop1.test0832(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0908(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0612(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0820(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0971(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0648(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0636(ds.RandoopTest.Randoop1) (16 ms)</li><li>ds.RandoopTest.Randoop1.test0983(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0844(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0856(ds.RandoopTest.Randoop1) (15 ms)</li><li>ds.RandoopTest.Randoop1.test0995(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0600(ds.RandoopTest.Randoop1) (5 ms)</li><li>ds.RandoopTest.Randoop1.test0604(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0928(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0812(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0975(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0824(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0963(ds.RandoopTest.Randoop1) (19 ms)</li><li>ds.RandoopTest.Randoop1.test0708(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0916(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0616(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0628(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0904(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0836(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0987(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0848(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0999(ds.RandoopTest.Randoop1) (5 ms)</li><li>ds.RandoopTest.Randoop1.test0704(ds.RandoopTest.Randoop1) (5 ms)</li><li>ds.RandoopTest.Randoop1.test0576(ds.RandoopTest.Randoop1) (5 ms)</li><li>ds.RandoopTest.Randoop1.test0828(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0688(ds.RandoopTest.Randoop1) (5 ms)</li><li>ds.RandoopTest.Randoop1.test0716(ds.RandoopTest.Randoop1) (33 ms)</li><li>ds.RandoopTest.Randoop1.test0816(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0588(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0552(ds.RandoopTest.Randoop1) (6 ms)</li><li>ds.RandoopTest.Randoop1.test0540(ds.RandoopTest.Randoop1) (27 ms)</li><li>ds.RandoopTest.Randoop1.test0800(ds.RandoopTest.Randoop1) (15 ms)</li><li>ds.RandoopTest.Randoop1.test0564(ds.RandoopTest.Randoop1) (21 ms)</li><li>ds.RandoopTest.Randoop1.test0664(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0804(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0728(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0676(ds.RandoopTest.Randoop1) (5 ms)</li><li>ds.RandoopTest.Randoop1.test0640(ds.RandoopTest.Randoop1) (5 ms)</li><li>ds.RandoopTest.Randoop1.test0652(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0584(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0808(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0712(ds.RandoopTest.Randoop1) (6 ms)</li><li>ds.RandoopTest.Randoop1.test0724(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0596(ds.RandoopTest.Randoop1) (19 ms)</li><li>ds.RandoopTest.Randoop1.test0572(ds.RandoopTest.Randoop1) (5 ms)</li><li>ds.RandoopTest.Randoop1.test0736(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0748(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0560(ds.RandoopTest.Randoop1) (38 ms)</li><li>ds.RandoopTest.Randoop1.test0644(ds.RandoopTest.Randoop1) (2 ms)</li><li>ds.RandoopTest.Randoop1.test0632(ds.RandoopTest.Randoop1) (14 ms)</li><li>ds.RandoopTest.Randoop1.test0991(ds.RandoopTest.Randoop1) (4 ms)</li><li>ds.RandoopTest.Randoop1.test0668(ds.RandoopTest.Randoop1) (3 ms)</li><li>ds.RandoopTest.Randoop1.test0700(ds.RandoopTest.Randoop1) (5 ms)</li><li>ds.RandoopTest.Randoop1.test0656(ds.RandoopTest.Randoop1) (4 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='http://pitest.org'>PIT</a> 1.3.2
+
+</body>
+</html>

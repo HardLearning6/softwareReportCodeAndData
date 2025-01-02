@@ -1,0 +1,6 @@
+PRJ;FolderName;Cobertos;Gerados;Cobertura;Mortos;Total;Escore
+21ArvoreBinaria;ds.EvoSuiteTest.Evo;43;48;90%;153;160;96%
+21ArvoreBinaria;ds.gptTest.ArvoreBinariaTest;34;48;71%;69;160;43%
+21ArvoreBinaria;ds.EvoSuiteTest.ArvoreBinaria_ESTest_scaffolding;0;48;0%;0;160;0%
+21ArvoreBinaria;ds.RandoopTest.Randoop;26;48;54%;28;160;18%
+21ArvoreBinaria;ds.RandoopTest.Randoop0;26;48;54%;28;160;18%

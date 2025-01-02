@@ -1,0 +1,8 @@
+21ArvoreBinaria:ds.ArvoreBinaria
+23TabelaHash:ds.TabelaHash
+26Grafo:ds.Grafo
+27Grafo:ds.Grafo
+29Grafo:ds.Grafo
+30Lista:ds.AgmPrim
+31CasamentoExato:ds.CasamentoExato
+33Identifier:ds.Identifier
