@@ -16,7 +16,7 @@ scripts:存放实验的自动化的python程序
 scripts\reports:存放程序reports.py执行的结果，提取PIT生成的报告中的信息并汇总到all.cvs文件中。 
 files.txt/file.txt:写入项目名称和目标待测试类
 gera-chatgpt.py:根据files.txt中的项目自动与GPT-4o-min进行交互得到测试类并存入项目的src\test\java\ds\gptTest中，其中apikey使用的是国内的中转网站，详见https://agicto.com/
-testconnect.py:根据https://agicto.com/提供的交互方式，测试apikey和模型的连接是否成功。
+testconnect.py:根据 https://agicto.com/  提供的交互方式，测试apikey和模型的连接是否成功。
 gera-evo.py:根据files.txt中的项目使用EvoSuite生成测试文件并存入项目的src\test\java\ds\EvoSuiteTest中
 gera-randoop.py:根据files.txt中的项目使用Randoop生成测试文件并存入项目的src\test\java\ds\RandoopTest中
 reports.py:提取PIT的报告并汇总
